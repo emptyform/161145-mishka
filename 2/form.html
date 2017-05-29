@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <base href="https://htmlacademy-adaptive.github.io/161145-mishka/2/">
+</head>
+  <body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="page-header__logo">
+          <img src="http://placehold.it/86x35" alt="Mishka logo">
+        </div>
+        <div class="main-nav__user-panel">
+          <a class="main-nav__search" href="#0">Поиск</a>
+          <a href="#0" class="main-nav__cart">Корзина:
+            <span class="main-nav__cart-content">пока пуста</span>
+          </a>
+        </div>
+        <button class="main-nav__toggler" type="button"></button>
+      </div>
+      <div class="main-offers">
+        <ul class="main-offers__list main-offers--gray">
+          <li class="main-offers__item">Новый поступления</li>
+          <li class="main-offers__item">Распродажа</li>
+        </ul>
+        <span class="main-offers__delivery">
+          Бесплатная доставка по России
+        </span>
+      </div>
+    </nav>
+    <h1 class="page-header__title page-header__title--gray">
+      Вязание на заказ
+    </h1>
+  </header>
+  <main>
+    <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+      <p class="order-form__desc">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+        форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <div class="order-form__item type-form">
+        <label class="type-form__box type-form__name">
+          <input class="type-form__input" type="radio" name="type"
+                 value="decoration">
+          <span class="type-form__indicator"></span>
+          Аксессуар для интерьера
+        </label>
+        <label class="type-form__box">
+          <input class="type-form__input" type="radio" name="type" value="toy">
+          <span class="type-form__indicator"></span>
+          Детская игрушка
+        </label>
+      </div>
+      <div class="order-form__item order-form__item--gray color-form">
+        <label class="color-form__box color-form__name">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="decoration">
+          <span class="color-form__indicator"></span>
+          Белый
+        </label>
+        <label class="color-form__box">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="toy">
+          <span class="color-form__indicator"></span>
+          Черный
+        </label>
+        <label class="color-form__box">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="toy">
+          <span class="color-form__indicator"></span>
+          Серый
+        </label>
+        <label class="color-form__box">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="toy">
+          <span class="color-form__indicator"></span>
+          Розовый
+        </label>
+        <label class="color-form__box">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="toy">
+          <span class="color-form__indicator"></span>
+          "Тиффани"
+        </label>
+        <label class="color-form__box">
+          <input class="color-form__input" type="checkbox" name="color"
+                 value="toy">
+          <span class="color-form__indicator"></span>
+          Оранжевый
+        </label>
+      </div>
+      <div class="order-form__item name-form">
+        <label class="name-form__box name-form__name">
+          Имя:
+          <input class="name-form__input" type="text"
+                 placeholder="Введите ваше имя*">
+        </label>
+        <label class="name-form__box">
+          Фамилия:
+          <input class="name-form__input" type="text"
+                 placeholder="Укажите фамилию*">
+        </label>
+        <label class="name-form__box">
+          Отчество:
+          <input class="name-form__input" type="text"
+                 placeholder="Отчество, если желаете">
+        </label>
+      </div>
+      <div class="order-form__item order-form--gray contacts-form">
+        <input type="tel" placeholder="+7 XXX XX XX*">
+        <input type="email" placeholder="Ваш Email*">
+      </div>
+      <div class="order-form__item details-form">
+        <textarea name="details"
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+      <div class="order-form__item submit-form">
+        <input class="submit-form__submit" type="submit"
+               value="Отправить заказ">
+        <span class="submit-form__note">
+          *Поля обязательны для заполнения
+        </span>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a href="#0">
+      <img class="page-footer__logo" src="http://placehold.it/86x35">
+    </a>
+    <div class="page-footer__social social-links">
+      <a class="social-link social-link--insta" href="https://instagram.com">
+        Мы в инстаграме
+      </a>
+      <a class="social-link social-link--insta" href="https://facebook.com">
+        Мы в фейсбуке
+      </a>
+      <a class="social-link social-link--insta" href="https://twitter.com">
+        Мы в твиттере
+      </a>
+    </div>
+    <div class="page-footer__copyright">
+      <span>Разработано:</span>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+        <img src="http://placehold.it/24x37" alt="htmlacademy logo">
+      </a>
+    </div>
+  </footer>
+  </body>
+</html>
