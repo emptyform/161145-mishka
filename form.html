@@ -6,37 +6,10 @@
   </head>
   <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <div class="page-header__logo">
-          <img src="http://placehold.it/86x35" alt="Mishka logo">
-        </div>
-        <div class="main-nav__user-panel">
-          <a class="main-nav__search" href="#0">Поиск</a>
-          <a href="#0" class="main-nav__cart">Корзина:
-            <span class="main-nav__cart-content">пока пуста</span>
-          </a>
-        </div>
-        <button class="main-nav__toggler" type="button"></button>
-      </div>
-      <div class="main-offers">
-        <ul class="main-offers__list main-offers--gray">
-          <li class="main-offers__item">Новый поступления</li>
-          <li class="main-offers__item">Распродажа</li>
-        </ul>
-        <span class="main-offers__delivery">
-          Бесплатная доставка по России
-        </span>
-      </div>
-    </nav>
+    <div class="page-header__logo">
+      <img src="http://placehold.it/86x35" alt="Mishka logo">
+    </div>
+    <button class="main-nav__toggler" type="button">Открыть</button>
     <h1 class="page-header__title page-header__title--gray">
       Вязание на заказ
     </h1>
@@ -47,95 +20,86 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
         форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <div class="order-form__item type-form">
-        <label class="type-form__box type-form__name">
-          <input class="type-form__input" type="radio" name="type"
-                value="decoration">
-          <span class="type-form__indicator"></span>
+      <h2 class="order-form__title">Тип</h2>
+      <div class="radio">
+        <input class="radio__input" type="radio" name="type" value="decoration"
+          id="decoration">
+        <label class="radio__label" for="decoration">
           Аксессуар для интерьера
         </label>
-        <label class="type-form__box">
-          <input class="type-form__input" type="radio" name="type" value="toy">
-          <span class="type-form__indicator"></span>
+      </div>
+      <div class="radio">
+        <input class="radio__input" type="radio" name="type" value="toy"
+          id="toy">
+        <label class="radio__label" for="toy">
           Детская игрушка
         </label>
       </div>
-      <div class="order-form__item order-form__item--gray color-form">
-        <label class="color-form__box color-form__name">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="decoration">
-          <span class="color-form__indicator"></span>
-          Белый
-        </label>
-        <label class="color-form__box">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="toy">
-          <span class="color-form__indicator"></span>
-          Черный
-        </label>
-        <label class="color-form__box">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="toy">
-          <span class="color-form__indicator"></span>
-          Серый
-        </label>
-        <label class="color-form__box">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="toy">
-          <span class="color-form__indicator"></span>
-          Розовый
-        </label>
-        <label class="color-form__box">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="toy">
-          <span class="color-form__indicator"></span>
-          "Тиффани"
-        </label>
-        <label class="color-form__box">
-          <input class="color-form__input" type="checkbox" name="color"
-            value="toy">
-          <span class="color-form__indicator"></span>
-          Оранжевый
-        </label>
+      <h2 class="order-form__title">Цвет</h2>
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="white" id="white">
+        <label class="checkbox__label" for="white">Белый</label>
       </div>
-      <div class="order-form__item name-form">
-        <label class="name-form__box name-form__name">
-          Имя:
-          <input class="name-form__input" type="text"
-            placeholder="Введите ваше имя*">
-        </label>
-        <label class="name-form__box">
-          Фамилия:
-          <input class="name-form__input" type="text"
-            placeholder="Укажите фамилию*">
-        </label>
-        <label class="name-form__box">
-          Отчество:
-          <input class="name-form__input" type="text"
-            placeholder="Отчество, если желаете">
-        </label>
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="gray" id="gray">
+        <label class="checkbox__label" for="gray">Серый</label>
       </div>
-      <div class="order-form__item order-form--gray contacts-form">
-        <input type="tel" placeholder="+7 XXX XX XX*">
-        <input type="email" placeholder="Ваш Email*">
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="tiffany" id="tiffany">
+        <label class="checkbox__label" for="tiffany">"Тиффани"</label>
       </div>
-      <div class="order-form__item details-form">
-        <textarea name="details"
-          placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="black" id="black">
+        <label class="checkbox__label" for="black">Черный</label>
       </div>
-      <div class="order-form__item submit-form">
-        <input class="submit-form__submit" type="submit"
-          value="Отправить заказ">
-        <span class="submit-form__note">
-          *Поля обязательны для заполнения
-        </span>
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="pink" id="pink">
+        <label class="checkbox__label" for="pink">Розовый</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox__input" type="checkbox" name="color"
+          value="orange" id="orange">
+        <label class="checkbox__label" for="orange">Оранжевый</label>
+      </div>
+      <h2 class="order-form__title">ФИО</h2>
+      <div class="text-form">
+        <label class="text-form_label">Имя:</label>
+        <input class="text-form__input" type="text"
+          placeholder="Введите ваше имя*">
+      </div>
+      <div class="text-form">
+        <label class="text-form_label">Фамилия:</label>
+        <input class="text-form__input" type="text"
+          placeholder="Укажите фамилию*">
+      </div>
+      <div class="text-form">
+        <label class="text-form__label">Отчество:</label>
+        <input class="text-form__input" type="text"
+          placeholder="Отчество, если желаете">
+      </div>
+      <h2 class="order-form__name">Тел</h2>
+      <input class="text-form__input text-form__input--phone" type="tel"
+        placeholder="+7 XXX XX XX*">
+      <h2 class="order-form__name">E-mail</h2>
+      <input class="text-form__input text-form__input--email" type="email"
+        placeholder="Ваш Email*">
+      <h2 class="order-form__name">Доп</h2>
+      <textarea name="text-area"
+        placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <div class="order-form__note">
+        *Поля обязательны для заполнения
+      </div>
+      <div class="submit">
+        <input class="submit__btn btn" type="submit" value="Отправить заказ">
       </div>
     </form>
   </main>
   <footer class="page-footer">
-    <a href="#0">
-      <img class="page-footer__logo" src="http://placehold.it/86x35">
-    </a>
     <div class="page-footer__social social-links">
       <a class="social-link social-link--insta" href="https://instagram.com">
         Мы в инстаграме

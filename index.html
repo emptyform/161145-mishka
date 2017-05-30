@@ -6,151 +6,117 @@
   </head>
   <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <div class="page-header__logo">
-          <img src="http://placehold.it/86x35" alt="Mishka logo">
-        </div>
-        <div class="main-nav__user-panel">
-          <a class="main-nav__search" href="#0">Поиск</a>
-          <a href="#0" class="main-nav__cart">Корзина:
-            <span class="main-nav__cart-content">пока пуста</span>
-          </a>
-        </div>
-        <button class="main-nav__toggler" type="button"></button>
-      </div>
-      <div class="main-offers">
-        <ul class="main-offers__list">
-          <li class="main-offers__item">Новый поступления</li>
-          <li class="main-offers__item">Распродажа</li>
-        </ul>
-        <span class="main-offers__delivery">
-          Бесплатная доставка по России
-        </span>
-      </div>
-    </nav>
+    <div class="page-header__logo">
+      <img src="http://placehold.it/86x35" alt="Mishka logo">
+    </div>
+    <button class="main-nav__toggler" type="button">Открыть</button>
     <h1 class="page-header__title page-header__title--image">
       Милые штуки ручной работы для дома
     </h1>
-    <div class="page-header__categories header-categories">
-      <ul class="header-categories__list">
-        <li class="header-categories__item header-categories__item--light">
+  </header>
+  <main>
+    <section class="categories">
+      <h2 class="categories__title">Категории</h2>
+      <ul class="categories__list">
+        <li class="categories__item categories__item--light">
           Предметы интерьера
         </li>
-        <li class="header-categories__item header-categories__item--dark">
+        <li class="categories__item categories__item--dark">
           Детские игрушки
         </li>
       </ul>
-    </div>
-  </header>
-  <main>
+    </section>
     <section class="week-deal">
-      <div class="week-deal__wrapper">
-        <h2 class="week-deal__title week-deal__title--name">
-          Вязанные корзинки
-        </h2>
-        <p class="week-deal__desc">Экологически чистая пряжа, ручная работа.
-          Доступны в шести расцветках, и трех размерах.
-        </p>
-        <ul class="week-deal__details-list">
-          <li class="week-deal__details-item">
-            <span class="week-deal__item-property">Цвет:</span>
-            <span class="week-deal__item-value">«Тиффани»/серый</span>
-          </li>
-          <li class="week-deal__details-item">
-            <span class="week-deal__item-property">Диаметр:</span>
-            <span class="week-deal__item-value">25 см</span>
-          </li>
-          <li class="week-deal__details-item">
-            <span class="week-deal__item-property">Высота:</span>
-            <span class="week-deal__item-value">15 см</span>
-          </li>
-        </ul>
-        <img src="http://placehold.it/400x500" alt="week deal item">
-        <span class="week-deal__price">Цена: 990 руб.</span>
-        <button class="week-deal__order btn">Заказать</button>
-      </div>
+      <h2 class="week-deal__title">
+        Вязанные корзинки
+      </h2>
+      <span class="week-deal__title-desc">Товар недели</span>
+      <p class="week-deal__desc">Экологически чистая пряжа, ручная работа.
+        Доступны в шести расцветках, и трех размерах.
+      </p>
+      <ul class="week-deal__details-list">
+        <li class="week-deal__details-item">
+          <span class="week-deal__item-property">Цвет:</span>
+          <span class="week-deal__item-value">«Тиффани»/серый</span>
+        </li>
+        <li class="week-deal__details-item">
+          <span class="week-deal__item-property">Диаметр:</span>
+          <span class="week-deal__item-value">25 см</span>
+        </li>
+        <li class="week-deal__details-item">
+          <span class="week-deal__item-property">Высота:</span>
+          <span class="week-deal__item-value">15 см</span>
+        </li>
+      </ul>
+      <img src="http://placehold.it/250x300" alt="week deal item">
+      <div class="week-deal__price">Цена: 990 руб.</div>
+      <a class="week-deal__order btn" href="#0">Заказать</a>
     </section>
     <section class="features">
-      <div class="features__wrepper">
-        <h2 class="features__title">Коротко о нас</h2>
-        <ul class="features__list">
-          <li class="features__item features__item--material">
-            Экологически чистые материалы
-          </li>
-          <li class="features__item features__item--handmade">
-            Скандинавский стиль по российской цене
-          </li>
-          <li class="features__item features__item--price">
-            Увеличивает лайки на фотографиях
-          </li>
-          <li class="features__item features__item--support">
-            Связано вручную с любовью и умилением
-          </li>
-          <li class="features__item features__item--likes">
-            Поддержка отечественного производителя
-          </li>
-          <li class="features__item features__item--gift">
-            Поставляется в подарочной упаковке
-          </li>
-        </ul>
-      </div>
+      <h2 class="features__title">Коротко о нас</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--material">
+          Экологически чистые материалы
+        </li>
+        <li class="features__item features__item--handmade">
+          Скандинавский стиль по российской цене
+        </li>
+        <li class="features__item features__item--price">
+          Увеличивает лайки на фотографиях
+        </li>
+        <li class="features__item features__item--support">
+          Связано вручную с любовью и умилением
+        </li>
+        <li class="features__item features__item--likes">
+          Поддержка отечественного производителя
+        </li>
+        <li class="features__item features__item--gift">
+          Поставляется в подарочной упаковке
+        </li>
+      </ul>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__title">Отзывы</h2>
-        <a class="reviews__write btn" href="#0">Написать</a>
-        <div class="reviews__list">
-          <blockquote class="reviews__item">
-            <p>Я молодая мама, но всё равно фотографии не набирали и
-                близко такого количества лайков, как у популярных
-                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
-                в Мишке, и мои фотографии сразу стали более стильными, а
-                такжe набирают больше лайков!</p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
-            <span class="reviews__author-id">@misssssiskras</span>
-          </blockquote>
-        </div>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__list">
+        <blockquote class="reviews__item">
+          <p>Я молодая мама, но всё равно фотографии не набирали и
+            близко такого количества лайков, как у популярных
+            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек
+            в Мишке, и мои фотографии сразу стали более стильными, а
+            такжe набирают больше лайков!</p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <span class="reviews__author-id">@misssssiskras</span>
+        </blockquote>
       </div>
+      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <a class="reviews__write btn" href="#0">Написать</a>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span class="contacts__item-name">e-mail:</span>
-            <span class="contacts__item-value">info@mimimishkashop.ru</span>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__item-name">адрес:</span>
-            <span class="contacts__item-value">
-              г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101
-            </span>
-          </li>
-        </ul>
-        <a class="contacts__write btn" href="#0">Напишите нам</a>
-        <div class="contacts__map">
-          <img src="http://placehold.it/500x400" alt="map">
-        </div>
+      <h2 class="contacts__title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__item-name">e-mail:</span>
+          <span class="contacts__item-value contacts__item-value--email">
+            info@mimimishkashop.ru
+          </span>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__item-name">адрес:</span>
+          <span class="contacts__item-value">
+            г. Санкт-Петербург,<br>
+            ул. Большая Конюшенная,<br>
+            д. 19/8, офис 101
+          </span>
+        </li>
+      </ul>
+      <div class="contacts__map">
+        <img src="http://placehold.it/200x300" alt="map">
       </div>
+      <a class="contacts__write btn" href="#0">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <a href="#0">
-      <img class="page-footer__logo" src="http://placehold.it/86x35">
-    </a>
     <div class="page-footer__social social-links">
       <a class="social-link social-link--insta" href="https://instagram.com">
         Мы в инстаграме
