@@ -1,0 +1,28 @@
+.main-nav {
+  &--hidden {
+    display: none;
+  }
+
+  &__toggler {
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    border: 0;
+
+    color: inherit;
+    line-height: normal;
+
+
+    &--close {
+      overflow: visible;
+      background: url("../img/icon-menu-open.svg");
+      background-position: center;
+    }
+
+    &--open {
+      width: 21px;
+      height: 21px;
+      background: url("../img/icon-menu-close.svg");
+    }
+  }
+}
