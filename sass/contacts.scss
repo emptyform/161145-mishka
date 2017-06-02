@@ -1,5 +1,5 @@
 .contacts {
-  margin: 0 30px;
+  margin: 40px 30px;
 
   &__title {
   }
@@ -13,11 +13,13 @@
 
   &__item {
     margin: 40px 0;
+
+    font-size: 15px;
   }
 
   &__item-name {
     display: inline-block;
-    width: 120px;
+    width: 58px;
 
     vertical-align: top;
   }
@@ -27,6 +29,6 @@
   }
 
   &__map {
-    margin: 0 -30px;
+    margin: 0 -30px 40px;
   }
 }

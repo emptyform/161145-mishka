@@ -3,6 +3,8 @@
   width: 259px;
   min-height: 52px;
   padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid $gray--dark;
 
   text-align: center;
@@ -12,4 +14,8 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
 }

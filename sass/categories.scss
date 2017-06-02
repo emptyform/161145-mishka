@@ -16,9 +16,6 @@
   &__item {
     position: relative;
 
-    height: 103px;
-    padding: 30px;
-
     color: $white;
 
     &--light {
@@ -28,6 +25,15 @@
     &--dark {
       background-color: $color-main--darken;
     }
+  }
+
+  &__link {
+    display: block;
+    height: 103px;
+    padding: 30px;
+
+    color: $white;
+    text-decoration: none;
   }
 
   &__item::after {

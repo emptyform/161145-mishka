@@ -1,5 +1,5 @@
 .week-deal {
-  margin-left: 30px;
+  margin: 35px 30px 75px;
 
   &__title {
     font-size: 25px;
@@ -43,9 +43,16 @@
   }
 
   &__price {
+    margin: 30px 0;
+
+    text-align: center;
     color: $gray--dark;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
+  }
+
+  &__order {
+    margin: 30px 0;
   }
 }
