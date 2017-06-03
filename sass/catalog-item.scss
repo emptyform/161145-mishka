@@ -1,0 +1,47 @@
+.catalogue-item {
+  margin: 30px 30px;
+  border: 1px solid $gray;
+
+  &__desc {
+    margin: 20px 30px 50px;
+  }
+
+  &__title {
+    display: block;
+
+    color: $black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__details {
+    color: $gray--dark;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px;
+  }
+
+  &__price {
+    color: $black;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__add {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+
+    background: url("../img/icon-cart.svg") 50% 50% no-repeat;
+  }
+}

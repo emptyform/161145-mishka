@@ -3,13 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <img src="http://placehold.it/86x35" alt="Mishka logo">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="img/logo-mobile.svg" alt="Mishka logo"></a>
+      </div>
+      <button class="main-nav__toggler main-nav__toggler--close" type="button" aria-label="Открыть"></button>
+      <nav class="main-nav main-nav--hidden">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#0" class="main-nav__link">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#0" class="main-nav__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
     </div>
-    <button class="main-nav__toggler" type="button">Открыть</button>
     <h1 class="page-header__title page-header__title--gray">
       Каталог товаров
     </h1>
@@ -17,7 +28,7 @@
   <main>
     <section class="catalogue">
       <article class="catalogue-item">
-        <img class="catalogue-item__img" src="http://placehold.it/250x200"
+        <img class="catalogue-item__img" src="img/photo-1-mobile@1x.jpg"
             alt="item image">
         <div class="catalogue-item__desc">
           <span class="catalogue-item__title">Зайчик-попрыгайчик</span>
@@ -31,7 +42,7 @@
         </div>
       </article>
       <article class="catalogue-item">
-        <img class="catalogue-item__img" src="http://placehold.it/250x200"
+        <img class="catalogue-item__img" src="img/photo-2-mobile@1x.jpg"
             alt="item image">
         <div class="catalogue-item__desc">
           <span class="catalogue-item__title">Корзинка для белья</span>
@@ -47,7 +58,7 @@
         </div>
       </article>
       <article class="catalogue-item">
-        <img class="catalogue-item__img" src="http://placehold.it/250x200"
+        <img class="catalogue-item__img" src="img/photo-3-mobile@1x.jpg"
             alt="item image">
         <div class="catalogue-item__desc">
           <span class="catalogue-item__title">Большая корзинка
@@ -66,7 +77,8 @@
     </section>
     <section class="creation">
       <h2 class="creation__title">Процесс производства</h2>
-      <video class="creation__video" src=""></video>
+      <video class="creation__video" poster="img/video-mobile@1x.jpg">
+      </video>
       <p class="creation__desc">
         По просьбам наших любимых фолловеров мы сняли для вас подробное
         видео о том, как появляются наши товары.
@@ -76,22 +88,25 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social-links">
-      <a class="social-link social-link--insta" href="https://instagram.com">
+      <a class="social-links__item social-links__item--insta" href="https://instagram.com">
         Мы в инстаграме
       </a>
-      <a class="social-link social-link--insta" href="https://facebook.com">
+      <a class="social-links__item social-links__item--fb" href="https://facebook.com">
         Мы в фейсбуке
       </a>
-      <a class="social-link social-link--insta" href="https://twitter.com">
+      <a class="social-links__item social-links__item--twitter" href="https://twitter.com">
         Мы в твиттере
       </a>
     </div>
-    <div class="page-footer__copyright">
-      <span>Разработано:</span>
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-        <img src="http://placehold.it/24x37" alt="htmlacademy logo">
+    <div class="page-footer page-footer--divider"></div>
+    <div class="page-footer__copyright copyright">
+      <span>Разработано</span>
+      <a class="copyright__link"
+        href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
       </a>
     </div>
   </footer>
+  <script src="js/app.js"></script>
   </body>
 </html>
