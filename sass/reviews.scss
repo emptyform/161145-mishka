@@ -1,5 +1,6 @@
 .reviews {
   margin-left: 30px;
+  @include container();
 }
 
 .reviews__title {

@@ -1,3 +1,7 @@
+.categories {
+  @include container();
+}
+
 .categories__title {
   font-size: 0;
 }

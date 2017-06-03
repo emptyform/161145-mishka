@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $gray--light;
+  @include container();
 
   &--divider {
     display: table;

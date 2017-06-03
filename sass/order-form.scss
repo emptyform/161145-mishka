@@ -1,5 +1,5 @@
 .order-form {
-  margin: 30px 30px 25px;
+  @include container();
   color: $gray--dark;
   font-size: 13px;
   font-weight: 400;

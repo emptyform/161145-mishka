@@ -1,5 +1,6 @@
 .week-deal {
   margin: 35px 30px 75px;
+  @include container();
 }
 
 .week-deal__title {

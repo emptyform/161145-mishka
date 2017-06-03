@@ -1,6 +1,7 @@
 .features {
   margin-left: 30px;
   margin-bottom: 60px;
+  @include container();
 }
 
 .features__list {

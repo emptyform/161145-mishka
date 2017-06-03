@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  @include container();
 }
 
 .page-header__top {
