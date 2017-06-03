@@ -1,42 +1,31 @@
-.categories {
-  &__title {
-    font-size: 0;
+.categories__title {
+  font-size: 0;
+}
+
+.categories__list {
+  padding: 0;
+  margin: 0;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  list-style-type: none;
+}
+
+.categories__item {
+  position: relative;
+
+  color: $white;
+
+  &--light {
+    background-color: $color-main;
   }
 
-  &__list {
-    padding: 0;
-    margin: 0;
-
-    font-size: 19px;
-    font-weight: 700;
-
-    list-style-type: none;
+  &--dark {
+    background-color: $color-main--darken;
   }
 
-  &__item {
-    position: relative;
-
-    color: $white;
-
-    &--light {
-      background-color: $color-main;
-    }
-
-    &--dark {
-      background-color: $color-main--darken;
-    }
-  }
-
-  &__link {
-    display: block;
-    height: 103px;
-    padding: 30px;
-
-    color: $white;
-    text-decoration: none;
-  }
-
-  &__item::after {
+  &::after {
     position: absolute;
     top: 25%;
     right: 50px;
@@ -48,17 +37,27 @@
     background-repeat: no-repeat;
   }
 
-  &__item--interior::after {
+  &--interior::after {
     width: 40px;
     height: 62px;
 
     background-image: url("../img/icon-interior.svg");
   }
 
-  &__item--toy::after {
+  &--toy::after {
     width: 60px;
     height: 60px;
 
     background-image: url("../img/icon-toy.svg");
   }
 }
+
+.categories__link {
+  display: block;
+  height: 103px;
+  padding: 30px;
+
+  color: $white;
+  text-decoration: none;
+}
+
