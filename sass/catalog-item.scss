@@ -3,11 +3,17 @@
   border: 1px solid $gray;
 
   &__desc {
-    margin: 20px 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    min-height: 155px;
+    margin: 20px 30px 20px;
   }
 
   &__title {
     display: block;
+    width: 100%;
 
     color: $black;
     font-size: 17px;
@@ -16,19 +22,18 @@
   }
 
   &__details {
+    display: block;
+    width: 100%;
+
     color: $gray--dark;
     font-size: 13px;
     font-weight: 400;
     line-height: 30px;
   }
 
-  &__buy {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 30px;
-  }
-
   &__price {
+    display: block;
+
     color: $black;
     font-size: 15px;
     font-weight: 700;
