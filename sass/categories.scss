@@ -1,5 +1,8 @@
 .categories {
-  @include container();
+  min-width: 320px;
+
+  font-size: 19px;
+  font-weight: 700;
 }
 
 .categories__title {
@@ -7,19 +10,18 @@
 }
 
 .categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include container();
   padding: 0;
-  margin: 0;
-
-  font-size: 19px;
-  font-weight: 700;
-
-  list-style-type: none;
 }
 
-.categories__item {
-  position: relative;
+.categories__item-wrapper {
+  min-height: 103px;
 
-  color: $white;
+  @media (min-width: $tablet-widths) {
+    width: 50%;
+  }
 
   &--light {
     background-color: $color-main;
@@ -28,11 +30,17 @@
   &--dark {
     background-color: $color-main--darken;
   }
+}
+
+.categories__item {
+  position: relative;
+
+  color: $white;
 
   &::after {
     position: absolute;
     top: 25%;
-    right: 50px;
+    right: 30px;
 
     display: table;
 
@@ -58,8 +66,7 @@
 
 .categories__link {
   display: block;
-  height: 103px;
-  padding: 30px;
+  padding: 30px 130px 30px 30px;
 
   color: $white;
   text-decoration: none;

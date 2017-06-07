@@ -1,31 +1,83 @@
 .week-deal {
-  margin: 35px 30px 75px;
-  @include container();
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include container-narrow();
+  margin-top: 30px;
+  margin-bottom: 75px;
+
+  @media (min-width: $tablet-widths) {
+    height: 540px;
+    align-content: space-between;
+  }
+
+  @media (min-width: $desktop-widths) {
+    align-content: flex-end;
+  }
 }
 
 .week-deal__title {
-  font-size: 25px;
+  margin: 0 0 5px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $tablet-widths) {
+    position: absolute;
+    font-size: 43px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    top: -15px;
+    left: 205px;
+
+    font-size: 53px;
+  }
 }
 
 .week-deal__title-desc {
+  margin-right: 60px;
+
   color: $color-main;
   font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-widths) {
+    align-self: flex-end;
+    order: 1;
+
+    width: 100px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-widths) {
+    order: -1;
+    height: 100%;
+  }
 }
 
 .week-deal__desc {
-  margin: 30px 0;
+  margin: 30px 0 35px;
 
   color: $gray--dark;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-widths) {
+    width: 285px;
+    margin-top: 105px;
+  }
 }
 
 .week-deal__details-list {
   padding: 0;
-  margin: 30px 0 40px;
+  margin: 0 0 40px;
 
   color: $gray--dark;
   font-size: 15px;
@@ -52,8 +104,20 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: $tablet-widths) {
+    margin: 0;
+  }
 }
 
-.week-deal__order {
-  margin: 30px 0;
+.week-deal__img {
+  @media (min-width: $tablet-widths) {
+    order: 2;
+
+    margin: 23px 0;
+  }
+
+  @media (min-width: $desktop-widths) {
+    margin-left: 70px;
+  }
 }

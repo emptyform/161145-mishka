@@ -1,10 +1,27 @@
 .features {
-  margin-left: 30px;
+  @include container-narrow();
   margin-bottom: 60px;
-  @include container();
+}
+
+.features__title {
+  margin: 0;
+
+  @media (min-width: $tablet-widths) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 
@@ -13,10 +30,15 @@
   line-height: 20px;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-widths) {
+    flex-direction: row;
+  }
 }
 
 .features__item {
-  margin-top: 35px;
+  width: 255px;
+  margin-top: 30px;
   padding-top: 50px;
 
   background-repeat: no-repeat;
