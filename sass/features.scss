@@ -5,16 +5,6 @@
 
 .features__title {
   margin: 0;
-
-  @media (min-width: $tablet-widths) {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
 
 .features__list {
@@ -30,10 +20,6 @@
   line-height: 20px;
 
   list-style-type: none;
-
-  @media (min-width: $tablet-widths) {
-    flex-direction: row;
-  }
 }
 
 .features__item {
@@ -67,3 +53,26 @@
     background-image: url("../img/icon-feature-6.svg");
   }
 }
+
+
+
+@media (min-width: $tablet-widths) {
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+

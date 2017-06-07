@@ -7,15 +7,6 @@
   @include container-narrow();
   margin-top: 30px;
   margin-bottom: 75px;
-
-  @media (min-width: $tablet-widths) {
-    height: 540px;
-    align-content: space-between;
-  }
-
-  @media (min-width: $desktop-widths) {
-    align-content: flex-end;
-  }
 }
 
 .week-deal__title {
@@ -23,18 +14,6 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-
-  @media (min-width: $tablet-widths) {
-    position: absolute;
-    font-size: 43px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    top: -15px;
-    left: 205px;
-
-    font-size: 53px;
-  }
 }
 
 .week-deal__title-desc {
@@ -45,20 +24,6 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-widths) {
-    align-self: flex-end;
-    order: 1;
-
-    width: 100px;
-
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-widths) {
-    order: -1;
-    height: 100%;
-  }
 }
 
 .week-deal__desc {
@@ -68,11 +33,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-
-  @media (min-width: $tablet-widths) {
-    width: 285px;
-    margin-top: 105px;
-  }
 }
 
 .week-deal__details-list {
@@ -104,20 +64,64 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-
-  @media (min-width: $tablet-widths) {
-    margin: 0;
-  }
 }
 
-.week-deal__img {
-  @media (min-width: $tablet-widths) {
+@media (min-width: $tablet-widths) {
+
+  .week-deal {
+    height: 540px;
+    align-content: space-between;
+  }
+
+  .week-deal__title {
+    position: absolute;
+    font-size: 43px;
+  }
+
+  .week-deal__title-desc {
+    align-self: flex-end;
+    order: 1;
+
+    width: 100px;
+
+    text-align: center;
+  }
+
+  .week-deal__desc {
+    width: 285px;
+    margin-top: 105px;
+  }
+
+  .week-deal__price {
+    margin: 0;
+  }
+
+  .week-deal__img {
     order: 2;
 
     margin: 23px 0;
   }
+}
 
-  @media (min-width: $desktop-widths) {
+@media (min-width: $desktop-widths) {
+
+  .week-deal {
+    align-content: flex-end;
+  }
+
+  .week-deal__title {
+    top: -15px;
+    left: 205px;
+
+    font-size: 53px;
+  }
+
+  .week-deal__title-desc {
+    order: -1;
+    height: 100%;
+  }
+
+  .week-deal__img {
     margin-left: 70px;
   }
 }

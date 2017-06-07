@@ -10,18 +10,6 @@
 
 .reviews__title {
   margin: 0;
-
-  @media (min-width: $tablet-widths) {
-    order: -2;
-
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
 
 .reviews__item {
@@ -52,26 +40,11 @@
   line-height: 30px;
 }
 
-.reviews__write {
-  @media (min-width: $tablet-widths) {
-    order: -1;
-
-    width: 175px;
-    margin: 0;
-  }
-}
-
 .reviews__btn-box {
   padding: 0;
   margin-bottom: 40px;
 
   font-size: 0;
-
-  @media (min-width: $tablet-widths) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
 }
 
 .reviews__btn {
@@ -100,5 +73,36 @@
 
   &--next {
     background: url("../img/icon-right-arrow.svg") 50% 50% no-repeat;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+
+  .reviews__title {
+    order: -2;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__write {
+    order: -1;
+
+    width: 175px;
+    margin: 0;
+  }
+
+  .reviews__btn-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

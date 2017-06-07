@@ -6,11 +6,6 @@
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 40px;
-
-  @media (min-width: $desktop-widths) {
-    height: 500px;
-    flex-direction: column;
-  }
 }
 
 .contacts__title {
@@ -22,18 +17,6 @@
   font-weight: 700;
   line-height: 30px;
 
-  @media (min-width: $tablet-widths) {
-    width: 100%;
-
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
   &--flag::after {
     position: absolute;
 
@@ -41,17 +24,6 @@
     height: 81px;
 
     background-image: url("../img/icon-flag.svg");
-
-    @media (min-width: $tablet-widths) {
-      top: 15px;
-      right: 0;
-
-      content: "";
-    }
-
-    @media (min-width: $desktop-widths) {
-      left: 60px;
-    }
   }
 }
 
@@ -64,26 +36,12 @@
   flex-grow: 1;
 
   list-style-type: none;
-
-  @media (min-width: $desktop-widths) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
 }
 
 .contacts__item {
   margin-bottom: 40px;
 
   font-size: 15px;
-
-  @media (min-width: $tablet-widths) {
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-widths) {
-    width: 100%;
-    margin: 20px 0;
-  }
 }
 
 .contacts__item-name {
@@ -97,26 +55,72 @@
   display: inline-block;
 }
 
-.contacts__write {
-  @media (min-width: $tablet-widths) {
-    width: 230px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    margin: 0;
-  }
-}
-
 .contacts__map {
   //width: calc(100vw + 2 * $mobile-padding); TODO calculation % + vw
   margin-left: -$mobile-padding;
   margin-bottom: 40px;
+}
 
-  @media (min-width: $tablet-widths) {
+@media (min-width: $tablet-widths) {
+
+  .contacts__title {
     width: 100%;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &--flag::after {
+      top: 15px;
+      right: 0;
+
+      content: "";
+    }
   }
 
-  @media (min-width: $desktop-widths) {
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__write {
+    width: 230px;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+
+  .contacts {
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &--flag::after {
+      left: 60px;
+    }
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .contacts__item {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contacts__write {
+    margin: 0;
+  }
+
+  .contacts__map {
     order: 1;
   }
 }
