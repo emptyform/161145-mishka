@@ -54,9 +54,11 @@
   }
 }
 
-
-
 @media (min-width: $tablet-widths) {
+
+  .features {
+    margin-bottom: 80px;
+  }
 
   .features__title {
     font-size: 43px;
@@ -64,11 +66,17 @@
   }
 
   .features__list {
-    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    margin-top: 15px;
   }
 }
 
 @media (min-width: $desktop-widths) {
+
+  .features {
+    margin-bottom: 90px;
+  }
 
   .features__title {
     font-size: 53px;

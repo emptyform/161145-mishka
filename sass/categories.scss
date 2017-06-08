@@ -18,6 +18,14 @@
 
 .categories__item-wrapper {
   min-height: 103px;
+
+  &--light {
+    background-color: $color-main;
+  }
+
+  &--dark {
+    background-color: $color-main--darken;
+  }
 }
 
 .categories__item {
@@ -62,16 +70,19 @@
 
 @media (min-width: $tablet-widths) {
 
+  .categories {
+    margin-bottom: 55px;
+  }
+
   .categories__item-wrapper {
     width: 50%;
+  }
+}
 
-    &--light {
-      background-color: $color-main;
-    }
+@media (min-width: $desktop-widths) {
 
-    &--dark {
-      background-color: $color-main--darken;
-    }
+  .categories {
+    margin-bottom: 75px;
   }
 }
 

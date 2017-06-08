@@ -6,7 +6,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-widths) {
-    width: 668px;
+    width: 768px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -24,13 +24,13 @@
   margin-right: auto;
 
   @media (min-width: $tablet-widths) {
-    width: 668px;
+    width: 768px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   @media (min-width: $desktop-widths) {
-    width: 875px;
+    width: 1050px;
     padding-left: 175px;
   }
 }

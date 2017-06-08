@@ -63,22 +63,32 @@
 
 @media (min-width: $tablet-widths) {
 
+  .contacts {
+    margin-bottom: 55px;
+  }
+
   .contacts__title {
     width: 100%;
+    margin-bottom: 65px;
 
     font-size: 43px;
     line-height: 50px;
 
     &--flag::after {
-      top: 15px;
-      right: 0;
+      top: -15px;
+      right: 70px;
 
       content: "";
     }
   }
 
+  .contacts__list {
+    margin-bottom: 60px;
+  }
+
   .contacts__item {
     width: 50%;
+    margin: 0;
   }
 
   .contacts__write {
@@ -87,22 +97,30 @@
 
   .contacts__map {
     width: 100%;
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: $desktop-widths) {
 
   .contacts {
-    height: 500px;
+    height: 460px;
+    margin-bottom: 105px;
     flex-direction: column;
+    align-content: space-between;
   }
 
   .contacts__title {
+    width: auto;
+    margin-top: 80px;
+    margin-bottom: 45px;
+
     font-size: 53px;
     line-height: 57px;
 
     &--flag::after {
-      left: 60px;
+      top: 60px;
+      left: 70px;
     }
   }
 
@@ -121,6 +139,7 @@
   }
 
   .contacts__map {
+    width: auto;
     order: 1;
   }
 }
