@@ -19,3 +19,8 @@
 
   background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
 }
+
+@media (min-width: $tablet-widths) {
+  font-size: 19px;
+  line-height: 18px;
+}
