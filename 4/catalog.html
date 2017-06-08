@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/161145-mishka/4/">
+</head>
+  <body>
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="page-header__logo logo">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" alt="Mishka logo">
+        </a>
+      </div>
+      <button class="main-nav__toggler main-nav__toggler--close" type="button"
+        aria-label="Открыть"></button>
+      <nav class="main-nav main-nav--hidden">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#0" class="main-nav__link">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#0" class="main-nav__link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="page-header__title page-header__title--gray">
+      Каталог товаров
+    </h1>
+  </header>
+  <main>
+    <section class="catalog">
+      <article class="catalog-item">
+        <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg"
+            alt="item image">
+        <div class="catalog-item__desc">
+          <span class="catalog-item__title">Зайчик-попрыгайчик</span>
+          <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
+          <span class="catalog-item__price">1 200 руб.</span>
+          <a class="catalog-item__add" href="#0">
+            Добавить в корзину
+          </a>
+        </div>
+      </article>
+      <article class="catalog-item">
+        <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg"
+            alt="item image">
+        <div class="catalog-item__desc">
+          <span class="catalog-item__title">Корзинка для белья</span>
+          <span class="catalog-item__details">
+            Диаметр 15 см, высота 10 см
+          </span>
+          <span class="catalog-item__price">690 руб.</span>
+          <a class="catalog-item__add" href="#0">
+            Добавить в корзину
+          </a>
+        </div>
+      </article>
+      <article class="catalog-item">
+        <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg"
+            alt="item image">
+        <div class="catalog-item__desc">
+          <span class="catalog-item__title">Большая корзинка
+            для игрушек</span>
+          <span class="catalog-item__details">
+            Диаметр 30 см, высота 30 см
+          </span>
+          <span class="catalog-item__price">1 500 руб.</span>
+          <a class="catalog-item__add" href="#0">
+            Добавить в корзину
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="creation">
+      <h2 class="creation__title">Процесс производства</h2>
+      <video class="creation__video" poster="img/video-mobile@1x.jpg">
+      </video>
+      <p class="creation__desc">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное
+        видео о том, как появляются наши товары.
+      </p>
+      <a href="#0" class="creation__order btn">Сделать заказ</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social-links">
+      <a class="social-links__item social-links__item--insta"
+        href="https://instagram.com">
+        Мы в инстаграме
+      </a>
+      <a class="social-links__item social-links__item--fb"
+        href="https://facebook.com">
+        Мы в фейсбуке
+      </a>
+      <a class="social-links__item social-links__item--twitter"
+        href="https://twitter.com">
+        Мы в твиттере
+      </a>
+    </div>
+    <div class="page-footer page-footer--divider"></div>
+    <div class="page-footer__copyright copyright">
+      <span>Разработано</span>
+      <a class="copyright__link"
+        href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  </body>
+</html>
