@@ -104,14 +104,11 @@
 @media (min-width: $desktop-widths) {
 
   .contacts {
-    height: 460px;
     margin-bottom: 105px;
-    flex-direction: column;
-    align-content: space-between;
   }
 
   .contacts__title {
-    width: auto;
+    width: 100%;
     margin-top: 80px;
     margin-bottom: 45px;
 
@@ -127,6 +124,7 @@
   .contacts__list {
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
   }
 
   .contacts__item {
@@ -139,7 +137,9 @@
   }
 
   .contacts__map {
+    position: absolute;
+    right: 0;
+
     width: auto;
-    order: 1;
   }
 }

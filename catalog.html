@@ -9,14 +9,14 @@
   <body>
   <header class="page-header">
     <div class="page-header__top">
-      <div class="page-header__logo logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" alt="Mishka logo">
-        </a>
-      </div>
-      <button class="main-nav__toggler main-nav__toggler--close" type="button"
-        aria-label="Открыть"></button>
       <nav class="main-nav main-nav--hidden">
+        <div class="page-header__logo logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" alt="Mishka logo">
+          </a>
+        </div>
+        <button class="main-nav__toggler main-nav__toggler--close" type="button"
+          aria-label="Открыть"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
@@ -24,6 +24,8 @@
           <li class="main-nav__item">
             <a href="form.html" class="main-nav__link">Вязание на заказ</a>
           </li>
+        </ul>
+        <ul class="main-nav__user">
           <li class="main-nav__item">
             <a href="#0" class="main-nav__link">Поиск по сайту</a>
           </li>
@@ -82,38 +84,46 @@
       </article>
     </section>
     <section class="creation">
-      <h2 class="creation__title">Процесс производства</h2>
-      <video class="creation__video" poster="img/video-mobile@1x.jpg">
-      </video>
-      <p class="creation__desc">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное
-        видео о том, как появляются наши товары.
-      </p>
-      <a href="#0" class="creation__order btn">Сделать заказ</a>
+      <div class="creation-wrapper">
+        <h2 class="creation__title creation__title--icon">Процесс
+          производства</h2>
+        <video class="creation__video" poster="img/video-mobile@1x.jpg">
+        </video>
+        <p class="creation__desc">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное
+          видео о том, как появляются наши товары.
+        </p>
+        <a href="#0" class="creation__order btn">Сделать заказ</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social-links">
-      <a class="social-links__item social-links__item--insta"
-        href="https://instagram.com">
-        Мы в инстаграме
-      </a>
-      <a class="social-links__item social-links__item--fb"
-        href="https://facebook.com">
-        Мы в фейсбуке
-      </a>
-      <a class="social-links__item social-links__item--twitter"
-        href="https://twitter.com">
-        Мы в твиттере
-      </a>
-    </div>
-    <div class="page-footer page-footer--divider"></div>
-    <div class="page-footer__copyright copyright">
-      <span>Разработано</span>
-      <a class="copyright__link"
-        href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <img src="img/logo-mobile.svg" alt="Mishka logo">
+      </div>
+      <div class="page-footer__social social-links">
+        <a class="social-links__item social-links__item--insta"
+          href="https://instagram.com">
+          Мы в инстаграме
+        </a>
+        <a class="social-links__item social-links__item--fb"
+          href="https://facebook.com">
+          Мы в фейсбуке
+        </a>
+        <a class="social-links__item social-links__item--twitter"
+          href="https://twitter.com">
+          Мы в твиттере
+        </a>
+      </div>
+      <div class="page-footer page-footer--divider"></div>
+      <div class="page-footer__copyright copyright">
+        <span>Разработано</span>
+        <a class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/app.js"></script>

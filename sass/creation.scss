@@ -1,10 +1,16 @@
 .creation {
-  margin: 30px 0;
-  border: 1px solid $gray;
   @include container();
+
+  margin-bottom: 60px;
+}
+
+.creation-wrapper {
+  position: relative;
+  border: 1px solid $gray;
 }
 
 .creation__title {
+  padding-left: 60px;
   margin: 30px 30px 25px;
   color: $black;
   font-size: 17px;
@@ -12,8 +18,27 @@
   line-height: 24px;
 }
 
+.creation__title--icon::before {
+  position: absolute;
+  top: 36px;
+  left: 35px;
+
+  width: 32px;
+  height: 27px;
+
+  content: "";
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+}
+
+.creation__video {
+  margin-bottom: 30px;
+}
+
 .creation__desc {
-  margin: 30px 30px 25px;
+  width: 183px;
+  margin: 0 30px 25px;
+
   color: $gray--dark;
   font-size: 13px;
   font-weight: 400;
@@ -21,5 +46,7 @@
 }
 
 .creation__order {
-  margin: 30px 0;
+  width: 192px;
+
+  margin-bottom: 33px;
 }

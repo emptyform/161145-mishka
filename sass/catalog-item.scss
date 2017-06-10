@@ -50,3 +50,27 @@
 
   background: url("../img/icon-cart.svg") 50% 50% no-repeat;
 }
+
+@media (min-width: $tablet-widths) {
+  .catalog-item {
+    display: flex;
+    flex-direction: column;
+    ;
+  }
+
+  .catalog-item__desc {
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 335px;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .catalog-item__details {
+    margin-bottom: auto;
+  }
+
+  .catalog-item__price {
+    align-self: flex-end;
+  }
+}

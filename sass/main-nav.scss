@@ -1,24 +1,64 @@
 .main-nav {
-  @include container();
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 
-  color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__navigation-list {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+
+  margin: 0;
+
+  list-style-type: none;
+  z-index: 1;
+}
+
+.main-nav__user-panel-list {
+  position: absolute;
+  top: 228px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  z-index: 1;
+}
+
+.main-nav__navigation-item {
+  z-index: 100;
+  padding: 30px;
+  min-height: 79px;
+
+  text-align: center;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
+
+  background-color: $white;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
-.main-nav__item {
-  height: 80px;
+.main-nav__user-panel-item {
+  min-height: 79px;
+  padding: 30px;
+
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  background-color: $white;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
 .main-nav__link {
+  display: inline-block;
   width: 100%;
-  height: 80px;
-  padding: 27px 0;
-  border-top: 1px solid $gray;
+  height: 100%;
 
   color: inherit;
   text-decoration: none;
@@ -49,56 +89,11 @@
   }
 }
 
-.tablet-nav {
-  display: none;
-  @include container();
-}
-
-.tablet-nav__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.tablet-nav__item {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.tablet-nav__delivery {
-}
-
-.tablet-nav__link {
-  color: $black;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-}
-
 @media (min-width: $tablet-widths) {
-
-  .main-nav__item {
-    height: 633px;
-    padding: 142px 135px;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .tablet-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 75px;
+  .main-nav__toggler {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-widths) {
-
-  .main-nav__item {
-    height: 633px;
-    padding: 142px 300px;
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
