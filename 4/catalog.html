@@ -9,32 +9,47 @@
 </head>
   <body>
   <header class="page-header">
-    <div class="page-header__top">
-      <nav class="main-nav main-nav--hidden">
-        <div class="page-header__logo logo">
-          <a href="index.html">
-            <img src="img/logo-mobile.svg" alt="Mishka logo">
-          </a>
-        </div>
-        <button class="main-nav__toggler main-nav__toggler--close" type="button"
-          aria-label="Открыть"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user">
-          <li class="main-nav__item">
-            <a href="#0" class="main-nav__link">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#0" class="main-nav__link">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__wrapper">
+      <div class="page-header__top page-header__top--devider">
+        <nav class="page-header__nav main-nav">
+          <div class="page-header__logo main-nav__logo logo">
+            <a href="index.html">
+              <img src="img/logo-mobile.svg" alt="Mishka logo">
+            </a>
+          </div>
+          <button class="main-nav__toggler main-nav__toggler--close" type="button"
+            aria-label="Открыть">Открыть</button>
+          <ul class="main-nav__navigation-list main-nav__navigation-list--close">
+            <li class="main-nav__navigation-item main-nav__navigation-item--transparent">
+              <a class="main-nav__navigation-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__navigation-item main-nav__navigation-item--transparent">
+              <a class="main-nav__navigation-link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-panel-list main-nav__user-panel-list--close">
+            <li class="main-nav__user-panel-item main-nav__user-panel-item--search">
+              <a class="main-nav__user-panel-link" href="#0">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__user-panel-item main-nav__user-panel-item--cart">
+              <a class="main-nav__user-panel-link" href="#0">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul
+            class="main-nav__desktop-nav-list main-nav__desktop-nav-list--close">
+            <li class="main-nav__desktop-nav-item main-nav__desktop-nav-item--search">
+              <a class="main-nav__desktop-nav-link" href="#0">Новые
+                поступления</a>
+            </li>
+            <li class="main-nav__desktop-nav-item main-nav__desktop-nav-item--cart">
+              <a class="main-nav__desktop-nav-link" href="#0">Распродажа</a>
+            </li>
+          </ul>
+          <span class="page-header__delivery">
+          Бесплатная доставка по России
+        </span>
+        </nav>
+      </div>
     </div>
     <h1 class="page-header__title page-header__title--gray">
       Каталог товаров
@@ -48,10 +63,12 @@
         <div class="catalog-item__desc">
           <span class="catalog-item__title">Зайчик-попрыгайчик</span>
           <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
-          <span class="catalog-item__price">1 200 руб.</span>
-          <a class="catalog-item__add" href="#0">
-            Добавить в корзину
-          </a>
+          <div class="catalog-item__order catalog-item__order--devider">
+            <span class="catalog-item__price">1 200 руб.</span>
+            <a class="catalog-item__add" href="#0">
+              Добавить в корзину
+            </a>
+          </div>
         </div>
       </article>
       <article class="catalog-item">
@@ -62,35 +79,38 @@
           <span class="catalog-item__details">
             Диаметр 15 см, высота 10 см
           </span>
-          <span class="catalog-item__price">690 руб.</span>
-          <a class="catalog-item__add" href="#0">
-            Добавить в корзину
-          </a>
+          <div class="catalog-item__order catalog-item__order--devider">
+            <span class="catalog-item__price">690 руб.</span>
+            <a class="catalog-item__add" href="#0">
+              Добавить в корзину
+            </a>
+          </div>
         </div>
       </article>
       <article class="catalog-item">
         <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg"
             alt="item image">
         <div class="catalog-item__desc">
-          <span class="catalog-item__title">Большая корзинка
-            для игрушек</span>
+          <span class="catalog-item__title">Большая корзинка<br> для игрушек</span>
           <span class="catalog-item__details">
             Диаметр 30 см, высота 30 см
           </span>
-          <span class="catalog-item__price">1 500 руб.</span>
-          <a class="catalog-item__add" href="#0">
-            Добавить в корзину
-          </a>
+          <div class="catalog-item__order catalog-item__order--devider">
+            <span class="catalog-item__price">1 500 руб.</span>
+            <a class="catalog-item__add" href="#0">
+              Добавить в корзину
+            </a>
+          </div>
         </div>
       </article>
     </section>
     <section class="creation">
-      <div class="creation-wrapper">
+      <div class="creation__wrapper">
         <h2 class="creation__title creation__title--icon">Процесс
           производства</h2>
         <video class="creation__video" poster="img/video-mobile@1x.jpg">
         </video>
-        <p class="creation__desc">
+        <p class="creation__text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное
           видео о том, как появляются наши товары.
         </p>
