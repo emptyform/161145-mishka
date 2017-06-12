@@ -1,0 +1,18 @@
+.form-additional {
+  position: relative;
+  margin-bottom: 10px;
+
+  @include container-narrow();
+}
+
+@media (min-width: $tablet-widths) {
+  .form-additional {
+    padding-left: 165px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form-email__title {
+    margin: 0;
+  }
+}

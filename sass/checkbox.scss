@@ -6,3 +6,60 @@
   font-weight: 700;
   line-height: 18px;
 }
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__label {
+  position: relative;
+
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 65px;
+
+  cursor: pointer;
+}
+
+.checkbox__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+
+  content: "";
+  background-color: $white;
+
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__label > .checkbox__indicator::before {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+
+  width: 2px;
+  height: 12px;
+  border-radius: 30%;
+  transform: rotate(-45deg);
+
+  content: "";
+  background-color: $black;
+}
+
+.checkbox__input:checked + .checkbox__label > .checkbox__indicator::after {
+  position: absolute;
+  top: 8px;
+  left: 21px;
+
+  width: 2px;
+  height: 21px;
+  border-radius: 30%;
+  transform: rotate(45deg);
+
+  content: "";
+  background-color: $black;
+}

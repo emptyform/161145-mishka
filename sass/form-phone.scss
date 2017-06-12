@@ -1,0 +1,18 @@
+.form-phone {
+  position: relative;
+
+  @include container-narrow();
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-widths) {
+  .form-phone {
+    padding-left: 165px;
+    padding-top: 65px;
+    padding-bottom: 30px;
+  }
+
+  .form-phone__title {
+    margin: 0;
+  }
+}

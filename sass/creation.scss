@@ -94,13 +94,15 @@
 @media (min-width: $desktop-widths) {
 
   .creation__wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 455px;
   }
 
   .creation__video {
     width: 682px;
     height: 455px;
+    margin: 0;
   }
 
   .creation__title {
@@ -128,7 +130,7 @@
 
   .creation__order {
     display: inline-block;
-    width: auto;
-    margin: 0 30px 45px;
+    width: 230px;
+    margin: 0 80px 45px;
   }
 }

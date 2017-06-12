@@ -1,5 +1,6 @@
 .order-form {
-  @include container();
+  margin-bottom: 55px;
+
   color: $gray--dark;
   font-size: 13px;
   font-weight: 400;
@@ -7,11 +8,61 @@
 }
 
 .order-form__title {
-  margin: 35px 0 30px;
+  position: relative;
 
   color: $color-main;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+
+  &--divider::after {
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-main--dark;
+  }
+}
+
+.order-form__desc {
+  @include container-narrow();
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-widths) {
+
+  .order-form__title {
+    position: absolute;
+    left: 50px;
+
+    &--divider::after {
+      display: none;
+    }
+  }
+
+  .order-form__wrapper {
+
+    &--gray {
+      background-color: $gray--light;
+    }
+  }
+
+  .order-form__desc {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .order-form__desc {
+    padding-right: 175px;
+  }
 }

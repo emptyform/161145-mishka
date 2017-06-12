@@ -1,0 +1,20 @@
+.form-name {
+  @include container-narrow();
+}
+
+@media (min-width: $tablet-widths) {
+  .form-name {
+    position: relative;
+
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 165px;
+  }
+
+  .form-name__title {
+    top: 60px;
+    left: 50px;
+
+    margin: 0;
+  }
+}

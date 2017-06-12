@@ -1,0 +1,18 @@
+.form-email {
+  position: relative;
+
+  @include container-narrow();
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-widths) {
+  .form-email {
+    padding-left: 165px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .form-email__title {
+    margin: 0;
+  }
+}
