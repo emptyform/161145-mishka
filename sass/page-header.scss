@@ -40,7 +40,7 @@
   &--gray {
     min-height: 175px;
     margin-bottom: 30px;
-    padding: 75px 30px;
+    padding: 69px 30px;
     background-color: $gray;
   }
 }
@@ -94,9 +94,9 @@
 
     &--gray {
       min-height: 214px;
-      padding-top: 105px;
-      padding-bottom: 75px;
-      margin-top: -73px;
+      padding-top: 95px;
+      padding-bottom: 80px;
+      margin-top: -41px;
 
       font-size: 43px;
       line-height: 50px;
@@ -139,8 +139,11 @@
     min-width: 1200px;
     min-height: 255px;
 
+    font-size: 53px;
+    line-height: 57px;
+
     &--gray {
-      margin-top: -77px;
+      margin-top: -59px;
     }
 
     &--image {
