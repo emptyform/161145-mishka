@@ -1,11 +1,12 @@
 @import "variables";
+@import "mixins";
 @import "main";
+@import "button";
 @import "page-header";
 @import "main-nav";
 @import "categories";
 @import "week-deal";
 @import "fonts";
-@import "button";
 @import "features";
 @import "reviews";
 @import "contacts";
@@ -21,3 +22,13 @@
 @import "text-area";
 @import "catalog-item";
 @import "creation";
+@import "logo";
+@import "catalog";
+@import "outlines";
+@import "checkboxes";
+@import "radios";
+@import "form-additional";
+@import "form-email";
+@import "form-phone";
+@import "form-name";
+@import "form-submit";

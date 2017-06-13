@@ -1,0 +1,41 @@
+.checkboxes {
+  position: relative;
+
+  @include container-narrow();
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-widths) {
+
+  .checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 165px;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .checkboxes__title {
+    top: 70px;
+
+    margin: 0;
+  }
+
+  .checkboxes__item {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+
+  .checkboxes {
+    justify-content: flex-start;
+  }
+
+  .checkboxes__item {
+    width: 30%;
+  }
+}

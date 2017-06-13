@@ -18,4 +18,16 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: $gray--dark;
+
+    color: $white;
+  }
+
+  &:active {
+    background-color: $gray--dark;
+
+    color: $gray--click;
+  }
 }

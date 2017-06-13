@@ -1,0 +1,20 @@
+.radios {
+  position: relative;
+  margin-bottom: 45px;
+
+  @include container-narrow();
+}
+
+@media (min-width: $tablet-widths) {
+
+  .radios {
+    padding-left: 165px;
+    margin-bottom: 65px;
+  }
+
+  .radios__title {
+    top: 20px;
+
+    margin: 0;
+  }
+}

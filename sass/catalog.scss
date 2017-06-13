@@ -1,0 +1,12 @@
+.catalog {
+  @include container();
+}
+
+@media (min-width: $desktop-widths) {
+
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

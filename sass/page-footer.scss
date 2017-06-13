@@ -2,12 +2,38 @@
   background-color: $gray--light;
 
   &--divider {
-    display: table;
     margin: 0 auto;
     width: 80%;
     height: 1px;
 
     content: "";
     background-color: $gray;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__wrapper {
+  @include container();
+}
+
+@media (min-width: $tablet-widths) {
+
+  .page-footer__wrapper {
+    height: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer--divider {
+    display: none;
   }
 }

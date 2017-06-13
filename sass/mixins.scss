@@ -1,0 +1,36 @@
+@mixin container() {
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-widths) {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    width: 1150px;
+  }
+}
+
+@mixin container-narrow() {
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-widths) {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    width: 1050px;
+    padding-left: 175px;
+  }
+}

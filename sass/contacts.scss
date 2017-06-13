@@ -1,34 +1,145 @@
 .contacts {
-  margin: 40px 30px;
+  position: relative;
 
-  &__title {
+  @include container-narrow();
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  &--flag::after {
+    position: absolute;
+
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../img/icon-flag.svg");
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+
+  list-style-type: none;
+}
+
+.contacts__item {
+  margin-bottom: 40px;
+
+  font-size: 15px;
+}
+
+.contacts__item-name {
+  display: inline-block;
+  width: 58px;
+
+  vertical-align: top;
+}
+
+.contacts__item-value {
+  display: inline-block;
+}
+
+.contacts__map {
+  //width: calc(100vw + 2 * $mobile-padding); TODO calculation % + vw
+  margin-left: -$mobile-padding;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-widths) {
+
+  .contacts {
+    margin-bottom: 55px;
   }
 
-  &__list {
-    padding: 0;
+  .contacts__title {
+    width: 100%;
+    margin-bottom: 65px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &--flag::after {
+      top: -15px;
+      right: 70px;
+
+      content: "";
+    }
+  }
+
+  .contacts__list {
+    margin-bottom: 60px;
+  }
+
+  .contacts__item {
+    width: 50%;
     margin: 0;
-
-    list-style-type: none;
   }
 
-  &__item {
-    margin: 40px 0;
-
-    font-size: 15px;
+  .contacts__write {
+    width: 230px;
   }
 
-  &__item-name {
-    display: inline-block;
-    width: 58px;
+  .contacts__map {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+}
 
-    vertical-align: top;
+@media (min-width: $desktop-widths) {
+
+  .contacts {
+    margin-bottom: 105px;
   }
 
-  &__item-value {
-    display: inline-block;
+  .contacts__title {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 45px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &--flag::after {
+      top: 60px;
+      left: 70px;
+    }
   }
 
-  &__map {
-    margin: 0 -30px 40px;
+  .contacts__list {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .contacts__item {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contacts__write {
+    margin: 0;
+  }
+
+  .contacts__map {
+    position: absolute;
+    right: 0;
+
+    width: auto;
   }
 }

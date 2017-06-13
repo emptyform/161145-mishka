@@ -8,14 +8,19 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+}
 
-  &__link {
-    width: 27px;
-    height: 34px;
-    margin-left: 30px;
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  margin-left: 30px;
 
-    font-size: 0;
+  font-size: 0;
 
-    background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
-  }
+  background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+}
+
+@media (min-width: $tablet-widths) {
+  font-size: 19px;
+  line-height: 18px;
 }
