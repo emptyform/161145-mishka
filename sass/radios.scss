@@ -5,6 +5,10 @@
   @include container-narrow();
 }
 
+.radios__title {
+  margin-bottom: 23px;
+}
+
 @media (min-width: $tablet-widths) {
 
   .radios {

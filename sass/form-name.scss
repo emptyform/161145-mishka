@@ -2,6 +2,10 @@
   @include container-narrow();
 }
 
+.form-name__title {
+  margin-bottom: 28px;
+}
+
 @media (min-width: $tablet-widths) {
   .form-name {
     position: relative;
