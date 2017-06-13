@@ -56,6 +56,13 @@
   display: none;
 }
 
+.page-header__logo {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+}
+
 @media (min-width: $tablet-widths) {
 
   .page-header {
@@ -99,6 +106,10 @@
     &--divider::after {
       top: 88px;
     }
+  }
+
+  .page-header__logo {
+    width: auto;
   }
 }
 
