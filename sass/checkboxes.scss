@@ -37,9 +37,15 @@
 
   .checkboxes {
     justify-content: flex-start;
+    padding-left: 175px;
+  }
+
+  .checkboxes__title {
+    top: 68px;
+    left: 59px;
   }
 
   .checkboxes__item {
-    width: 30%;
+    width: 32%;
   }
 }

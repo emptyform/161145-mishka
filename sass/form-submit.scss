@@ -6,11 +6,18 @@
   .form-submit {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
   }
 
   .form-submit__button {
     margin: 0;
     order: -1;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .form-submit {
+    padding-right: 175px;
   }
 }

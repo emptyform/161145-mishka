@@ -12,15 +12,26 @@
   .form-name {
     position: relative;
 
-    padding-top: 25px;
-    padding-bottom: 30px;
-    padding-left: 165px;
+    padding-top: 52px;
+    padding-left: 218px;
+    padding-bottom: 1px;
   }
 
   .form-name__title {
-    top: 60px;
-    left: 50px;
+    top: 67px;
+    left: 51px;
 
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .form-name {
+    padding-left: 177px;
+  }
+
+  .form-name__title {
+    top: 66px;
+    left: 60px;
   }
 }

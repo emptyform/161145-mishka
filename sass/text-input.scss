@@ -35,6 +35,40 @@
 
 @media (min-width: $tablet-widths) {
   .text-input {
+    height: 50px;
+    padding-top: 0px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+
     background-color: transparent;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 21px;
+    }
+
+    &--phone {
+      background-position: right 26px top;
+      background-position-y: 8px;
+    }
+
+    &--email {
+      background-position: right 22px top;
+      background-position-y: 9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .text-input {
+    &--phone {
+      background-position: right 8px top;
+      background-position-y: 8px;
+    }
+
+    &--email {
+      background-position: right 4px top;
+      background-position-y: 10px;
+    }
   }
 }

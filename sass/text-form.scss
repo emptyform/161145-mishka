@@ -12,7 +12,19 @@
   margin-bottom: 8px;
 }
 @media (min-width: $tablet-widths) {
+
+  .text-form {
+    display: flex;
+  }
+
   .text-form__label {
-    padding-right: 40px;
+    padding-top: 14px;
+    padding-right: 34px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .text-form {
+    padding-right: 125px;
   }
 }

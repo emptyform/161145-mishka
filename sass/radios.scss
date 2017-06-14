@@ -17,8 +17,22 @@
   }
 
   .radios__title {
-    top: 17px;
+    top: 18px;
+    left: 51px;
 
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .radios {
+    padding-left: 176px;
+    margin-bottom: 65px;
+    margin-bottom: 64px;
+  }
+
+  .radios__title {
+    top: 13px;
+    left: 64px;
   }
 }

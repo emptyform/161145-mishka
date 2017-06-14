@@ -7,13 +7,25 @@
 
 @media (min-width: $tablet-widths) {
   .form-email {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 218px;
     padding-bottom: 60px;
     margin-bottom: 0;
   }
 
   .form-email__title {
-    margin: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .form-email {
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 31px;
+  }
+
+  .form-email__title {
+    margin-top: 19px;
   }
 }
