@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/161145-mishka/5/">
+</head>
+  <body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__top page-header__top--devider">
+        <nav class="page-header__nav main-nav">
+          <div class="page-header__logo main-nav__logo logo">
+            <a class="page-header__logo-link" href="index.html">
+              <img src="img/logo-mobile.svg" alt="Mishka logo">
+            </a>
+            <button class="main-nav__toggler main-nav__toggler--close" type="button"
+              aria-label="Открыть">Открыть</button>
+          </div>
+          <ul class="main-nav__navigation-list main-nav__navigation-list--close">
+            <li class="main-nav__navigation-item main-nav__navigation-item--transparent">
+              <a class="main-nav__navigation-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__navigation-item main-nav__navigation-item--transparent">
+              <a class="main-nav__navigation-link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-panel-list main-nav__user-panel-list--close">
+            <li class="main-nav__user-panel-item main-nav__user-panel-item--search">
+              <a class="main-nav__user-panel-link" href="#0">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__user-panel-item main-nav__user-panel-item--cart">
+              <a class="main-nav__user-panel-link" href="#0">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul
+            class="main-nav__desktop-nav-list main-nav__desktop-nav-list--close">
+            <li class="main-nav__desktop-nav-item main-nav__desktop-nav-item--search">
+              <a class="main-nav__desktop-nav-link" href="#0">Новые
+                поступления</a>
+            </li>
+            <li class="main-nav__desktop-nav-item main-nav__desktop-nav-item--cart">
+              <a class="main-nav__desktop-nav-link" href="#0">Распродажа</a>
+            </li>
+          </ul>
+          <span class="page-header__delivery">
+          Бесплатная доставка по России
+        </span>
+        </nav>
+      </div>
+    </div>
+    <h1 class="page-header__title page-header__title--gray">
+      Вязание на заказ
+    </h1>
+  </header>
+  <main>
+    <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="order-form__box">
+        <p class="order-form__desc">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
+      <div class="order-form__box radios">
+        <h2 class="order-form__title order-form__title--divider radios__title">Тип</h2>
+        <div class="radio radios__item">
+          <input class="radio__input" type="radio" name="type" value="decoration" id="decoration">
+          <label class="radio__label" for="decoration">
+            <span class="radio__indicator"></span>
+            Аксессуар для интерьера
+          </label>
+        </div>
+        <div class="radio radios__item">
+          <input class="radio__input" type="radio" name="type" value="toy"
+            id="toy">
+          <label class="radio__label" for="toy">
+            <span class="radio__indicator"></span>
+            Детская игрушка
+          </label>
+        </div>
+      </div>
+      <div class="order-form__wrapper order-form__wrapper--gray">
+        <div class="order-form__box checkboxes">
+          <h2 class="order-form__title order-form__title--divider checkboxes__title">Цвет</h2>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color"
+              value="white" id="white">
+            <label class="checkbox__label" for="white">
+              <span class="checkbox__indicator"></span>
+              Белый
+            </label>
+          </div>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color"
+              value="gray" id="gray">
+            <label class="checkbox__label" for="gray">
+              <span class="checkbox__indicator"></span>
+              Серый
+            </label>
+          </div>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color"
+              value="tiffany" id="tiffany">
+            <label class="checkbox__label" for="tiffany">
+              <span class="checkbox__indicator"></span>
+              «Тиффани»
+            </label>
+          </div>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color" value="black" id="black">
+            <label class="checkbox__label" for="black">
+              <span class="checkbox__indicator"></span>
+              Черный
+            </label>
+          </div>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color" value="pink" id="pink">
+            <label class="checkbox__label" for="pink">
+              <span class="checkbox__indicator"></span>
+              Розовый
+            </label>
+          </div>
+          <div class="checkbox checkboxes__item">
+            <input class="checkbox__input" type="checkbox" name="color" value="orange" id="orange">
+            <label class="checkbox__label" for="orange">
+              <span class="checkbox__indicator"></span>
+              Оранжевый
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-name">
+        <h2
+          class="order-form__title order-form__title--divider form-name__title">
+          ФИО</h2>
+        <div class="text-form">
+          <label class="text-form__label" for="name">Имя:</label>
+          <input class="text-form__input text-input" type="text"
+            placeholder="Введите ваше имя*" id="name">
+        </div>
+        <div class="text-form">
+          <label class="text-form__label" for="surname">Фамилия:</label>
+          <input class="text-form__input text-input" type="text"
+            placeholder="Укажите фамилию*" id="surname">
+        </div>
+        <div class="text-form">
+          <label class="text-form__label" for="midname">Отчество:</label>
+          <input class="text-form__input text-input" type="text"
+            placeholder="Отчество, если желаете" id="midname">
+        </div>
+      </div>
+      <div class="order-form__wrapper order-form__wrapper--gray">
+        <div class="form-phone">
+          <h2 class="order-form__title order-form__title--divider form-phone__title">Тел</h2>
+          <input class="text-input text-input--phone" type="tel"
+            placeholder="+7 XXX XX XX*">
+        </div>
+      </div>
+      <div class="order-form__wrapper order-form__wrapper--gray">
+        <div class="form-email">
+          <h2 class="order-form__title order-form__title--divider form-email__title">E-mail</h2>
+          <input class="text-input text-input--email" type="email"
+            placeholder="Ваш Email*">
+        </div>
+      </div>
+      <div class="form-additional">
+        <h2 class="order-form__title order-form__title--divider">Доп</h2>
+        <textarea class="textarea" name="text-area"
+          placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+      <div class="form-submit">
+        <div class="order-form__note">
+          *Поля обязательны для заполнения
+        </div>
+        <div class="submit form-submit__button">
+          <input class="submit__btn btn" type="submit" value="Отправить заказ">
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <img src="img/logo-mobile.svg" alt="Mishka logo">
+      </div>
+      <div class="page-footer__social social-links">
+        <a class="social-links__item social-links__item--insta"
+          href="https://instagram.com">
+          Мы в инстаграме
+        </a>
+        <a class="social-links__item social-links__item--fb"
+          href="https://facebook.com">
+          Мы в фейсбуке
+        </a>
+        <a class="social-links__item social-links__item--twitter"
+          href="https://twitter.com">
+          Мы в твиттере
+        </a>
+      </div>
+      <div class="page-footer page-footer--divider"></div>
+      <div class="page-footer__copyright copyright">
+        <span>Разработано</span>
+        <a class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  </body>
+</html>
