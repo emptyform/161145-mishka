@@ -2,13 +2,13 @@
   position: relative;
 
   @include container-narrow();
-  margin-bottom: 40px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-widths) {
   .form-email {
-    padding-left: 165px;
-    padding-top: 30px;
+    padding-top: 7px;
+    padding-left: 218px;
     padding-bottom: 60px;
     margin-bottom: 0;
   }

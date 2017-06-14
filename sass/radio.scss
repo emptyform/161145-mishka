@@ -37,15 +37,43 @@
   cursor: pointer;
 }
 
-.radio__input:checked + .radio__label > .radio__indicator::before { //TODO is it ok?
+.radio__input:checked + .radio__label > .radio__indicator::before {
   position: absolute;
-  top: 10px;
-  left: 10px;
+    top: 10px;
+    left: 10px;
 
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
 
-  content: "";
-  background-color: $color-main;
+    content: "";
+    background-color: $color-main;
+  }
+
+  @media (min-width: $tablet-widths) {
+
+  .radio {
+      margin: 0 0 43px;
+    }
+
+  .radio__indicator {
+      width: 50px;
+      height: 50px;
+    }
+
+  .radio__input:checked + .radio__label > .radio__indicator::before {
+    top: 13px;
+    left: 13px;
+
+    width: 20px;
+    height: 21px;
+  }
+
+  .radio__label {
+    padding-top: 14px;
+    padding-left: 80px;
+
+    font-size: 19px;
+    line-height: 21px;
+  }
 }

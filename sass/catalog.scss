@@ -3,6 +3,12 @@
   margin-top: 30px;
 }
 
+@media (min-width: $tablet-widths) {
+  .catalog {
+    margin-top: 80px;
+  }
+}
+
 @media (min-width: $desktop-widths) {
 
   .catalog {

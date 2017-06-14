@@ -10,6 +10,8 @@
 .order-form__title {
   position: relative;
 
+  margin-bottom: 13px;
+
   color: $color-main;
   font-size: 17px;
   font-weight: 700;
@@ -59,7 +61,10 @@
 
   .order-form__desc {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 57px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 

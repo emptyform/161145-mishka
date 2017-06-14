@@ -1,9 +1,11 @@
 .form-name {
   @include container-narrow();
+
+  margin-bottom: 19px;
 }
 
 .form-name__title {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-widths) {
