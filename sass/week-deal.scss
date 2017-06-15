@@ -5,8 +5,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   @include container-narrow();
-  margin-top: 30px;
-  margin-bottom: 75px;
+  margin-bottom: 68px;
 }
 
 .week-deal__title {
@@ -17,7 +16,7 @@
 }
 
 .week-deal__title-desc {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   color: $color-main;
   font-weight: 700;
@@ -27,12 +26,12 @@
 }
 
 .week-deal__desc {
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .week-deal__text {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 
   color: $gray--dark;
   font-size: 15px;
@@ -53,16 +52,16 @@
 }
 
 .week-deal__details-item {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .week-deal__item-property {
   display: inline-block;
-  width: 110px;
+  width: 94px;
 }
 
 .week-deal__price {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   text-align: center;
   color: $gray--dark;
@@ -72,17 +71,17 @@
 }
 
 .week-deal__img {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-widths) {
 
   .week-deal {
-    margin-bottom: 125px;
+    margin-bottom: 118px;
   }
 
   .week-deal__title {
-    margin-bottom: 105px;
+    margin-bottom: 49px;
 
     font-size: 43px;
     line-height: 50px;
@@ -90,7 +89,8 @@
 
   .week-deal__title-desc {
     position: absolute;
-    right: 50px;
+    top: 9px;
+    right: 63px;
 
     width: 100px;
     margin: 0;
@@ -100,11 +100,14 @@
 
   .week-deal__desc {
     width: 285px;
-    margin-bottom: 70px;
+    margin-bottom: 47px;
   }
 
   .week-deal__text {
-    margin-bottom: 55px;
+    margin-bottom: 41px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .week-deal__details-item {
@@ -118,7 +121,10 @@
 
   .week-deal__price {
     width: 259px;
-    margin: 0 0 35px;
+    margin: 0 14px 32px;
+
+    font-size: 19px;
+    line-height: 27px;
   }
 
   .week-deal__img {
@@ -128,6 +134,7 @@
   }
 
   .week-deal__order {
+    width: 290px;
     margin: 0;
   }
 }
@@ -135,11 +142,12 @@
 @media (min-width: $desktop-widths) {
 
   .week-deal {
+    margin-bottom: 154px;
     padding-top: 60px;
   }
 
   .week-deal__title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
     font-size: 53px;
     line-height: 57px;
@@ -147,16 +155,16 @@
 
   .week-deal__title-desc {
     position: absolute;
-    top: 70px;
-    left: 45px;
+    top: 72px;
+    left: 33px;
   }
 
   .week-deal__desc {
-    margin-bottom: 115px;
+    margin-bottom: 102px;
   }
 
   .week-deal__text {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .week-deal__details-list {
@@ -164,7 +172,7 @@
 
   .week-deal__img {
     position: absolute;
-    top: 0;
-    right: 50px;
+    top: 6px;
+    right: 0;
   }
 }

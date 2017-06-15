@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "main";
-@import "button";
+@import "btn";
 @import "page-header";
 @import "main-nav";
 @import "categories";
@@ -14,12 +14,11 @@
 @import "social-links";
 @import "copyright";
 @import "order-form";
-@import "submit";
 @import "checkbox";
 @import "radio";
 @import "text-input";
-@import "toxt-form";
-@import "text-area";
+@import "text-form";
+@import "textarea";
 @import "catalog-item";
 @import "creation";
 @import "logo";
@@ -32,3 +31,4 @@
 @import "form-phone";
 @import "form-name";
 @import "form-submit";
+@import "submit";

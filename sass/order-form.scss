@@ -10,6 +10,8 @@
 .order-form__title {
   position: relative;
 
+  margin-bottom: 13px;
+
   color: $color-main;
   font-size: 17px;
   font-weight: 700;
@@ -35,9 +37,15 @@
 
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-widths) {
+
+  .order-form {
+    margin-bottom: 22px;
+  }
 
   .order-form__title {
     position: absolute;
@@ -57,12 +65,25 @@
 
   .order-form__desc {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 57px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__note {
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .order-form__desc {
-    padding-right: 175px;
+    padding-left: 250px;
+    margin-bottom: 52px;
+  }
+
+  .order-form__title {
+    left: 61px;
   }
 }

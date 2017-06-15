@@ -1,7 +1,74 @@
 .text-input {
+  height: 44px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid $black;
   margin: 0 0 15px;
+
   color: $black;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+
+  &::placeholder {
+    padding-bottom: 10px;
+
+    color: $gray--dark;
+    font-size: 17px;
+    line-height: 18px;
+
+    opacity: 0.3;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: right 3px;
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: right 3px;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .text-input {
+    height: 50px;
+    padding-top: 0px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    background-color: transparent;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 21px;
+    }
+
+    &--phone {
+      background-position: right 26px top;
+      background-position-y: 8px;
+    }
+
+    &--email {
+      background-position: right 22px top;
+      background-position-y: 9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .text-input {
+    &--phone {
+      background-position: right 8px top;
+      background-position-y: 8px;
+    }
+
+    &--email {
+      background-position: right 4px top;
+      background-position-y: 10px;
+    }
+  }
 }

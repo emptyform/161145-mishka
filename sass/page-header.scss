@@ -3,7 +3,7 @@
 }
 
 .page-header__top {
-  padding: 22px 0;
+  padding: 20px 0;
 
   &--devider::after {
     position: absolute;
@@ -26,10 +26,11 @@
   text-align: center;
   font-size: 27px;
   font-weight: 700;
+  line-height: 31px;
 
   &--image {
     height: 283px;
-    padding: 66px 30px;
+    padding: 69px 15px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: 50% 20%;
     background-repeat: no-repeat;
@@ -38,8 +39,8 @@
 
   &--gray {
     min-height: 175px;
-    margin-bottom: 30px;
-    padding: 75px 30px;
+    margin-bottom: 23px;
+    padding: 69px 30px;
     background-color: $gray;
   }
 }
@@ -63,14 +64,20 @@
   align-items: center;
 }
 
+.page-header__logo-link {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 21px;
+}
+
 @media (min-width: $tablet-widths) {
 
   .page-header {
-    margin-bottom: 80px;
+    margin-bottom: 72px;
   }
 
   .page-header__top {
-    &--devider {
+    &--devider::after {
       top: 88px;
     }
   }
@@ -79,17 +86,17 @@
     min-width: 768px;
 
     &--image {
-      height: 633px;
-      padding: 142px 135px;
+      height: 505px;
+      padding: 112px 135px;
       font-size: 43px;
       line-height: 50px;
     }
 
     &--gray {
       min-height: 214px;
-      padding-top: 105px;
-      padding-bottom: 75px;
-      margin-top: -73px;
+      padding-top: 95px;
+      padding-bottom: 80px;
+      margin-top: -41px;
 
       font-size: 43px;
       line-height: 50px;
@@ -111,6 +118,15 @@
   .page-header__logo {
     width: auto;
   }
+
+  .page-header__logo-link {
+    padding-left: 0;
+  }
+
+  .page-header__delivery {
+    order: 2;
+    margin-top: 17px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
@@ -123,17 +139,22 @@
     min-width: 1200px;
     min-height: 255px;
 
-    &--gray {
-      margin-top: -77px;
-    }
-  }
+    font-size: 53px;
+    line-height: 57px;
 
-  .page-header__title {
+    &--gray {
+      margin-top: -59px;
+    }
+
     &--image {
-      height: 633px;
-      padding: 142px 300px;
+      height: 443px;
+      padding: 94px 300px;
       font-size: 53px;
       line-height: 57px;
     }
+  }
+
+  .page-header__delivery {
+    margin-top: 0px;
   }
 }

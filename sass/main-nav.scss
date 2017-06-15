@@ -152,8 +152,8 @@
 
   .main-nav__navigation-item {
     display: inline-block;
-    padding: 25px 0;
-    margin-right: 35px;
+    margin-top: 18px;
+    margin-right: 31px;
 
     font-size: 15px;
 
@@ -168,8 +168,9 @@
   }
 
   .main-nav__user-panel-link {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-left: 83px;
+    padding-bottom: 33px;
   }
 
   .main-nav__user-panel-item {
@@ -184,6 +185,16 @@
       width: 80px;
 
       font-size: 0;
+
+      &::before {
+        top: 36px;
+        left: 34px;
+      }
+    }
+
+    &--cart::before {
+      top: 35px;
+      left: 31px;
     }
   }
 
@@ -197,10 +208,6 @@
     padding: 0;
 
     background-color: transparent;
-  }
-
-  .page-header__delivery {
-    order: 2;
   }
 }
 
@@ -216,8 +223,8 @@
 
   .main-nav__desktop-nav-item {
     display: inline-block;
-    padding: 27px 0;
-    margin-right: 35px;
+    padding: 18px 0;
+    margin-right: 58px;
 
     font-size: 15px;
     font-weight: 700;
@@ -239,7 +246,18 @@
   }
 
   .main-nav__navigation-item {
+    margin: 0;
+    margin-right: 66px;
+
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .main-nav__navigation-link {
+    padding: 32px 0;
+  }
+
+  .main-nav__user-panel-list {
+    margin-left: 90px;
   }
 }

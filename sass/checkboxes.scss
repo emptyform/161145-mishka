@@ -2,7 +2,11 @@
   position: relative;
 
   @include container-narrow();
-  margin-bottom: 45px;
+  margin-bottom: 41px;
+}
+
+.checkboxes__title {
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -10,14 +14,14 @@
   .checkboxes {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 165px;
-    padding-top: 65px;
-    padding-bottom: 10px;
+    padding-left: 217px;
+    padding-top: 50px;
+    padding-bottom: 26px;
     margin-bottom: 0;
   }
 
   .checkboxes__title {
-    top: 70px;
+    top: 67px;
 
     margin: 0;
   }
@@ -25,7 +29,7 @@
   .checkboxes__item {
     width: 50%;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 42px;
   }
 }
 
@@ -33,9 +37,15 @@
 
   .checkboxes {
     justify-content: flex-start;
+    padding-left: 175px;
+  }
+
+  .checkboxes__title {
+    top: 68px;
+    left: 59px;
   }
 
   .checkboxes__item {
-    width: 30%;
+    width: 32%;
   }
 }

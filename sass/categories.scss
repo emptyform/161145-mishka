@@ -1,5 +1,6 @@
 .categories {
   min-width: 320px;
+  margin-bottom: 27px;
 
   font-size: 19px;
   font-weight: 700;
@@ -18,6 +19,7 @@
 
 .categories__item-wrapper {
   min-height: 103px;
+  width: 100%;
 
   &--light {
     background-color: $color-main;
@@ -35,8 +37,6 @@
 
   &::after {
     position: absolute;
-    top: 25%;
-    right: 30px;
 
     display: table;
 
@@ -46,6 +46,9 @@
   }
 
   &--interior::after {
+    top: 22%;
+    right: 37px;
+
     width: 40px;
     height: 62px;
 
@@ -53,6 +56,9 @@
   }
 
   &--toy::after {
+    top: 20%;
+    right: 27px;
+
     width: 60px;
     height: 60px;
 
@@ -62,7 +68,7 @@
 
 .categories__link {
   display: block;
-  padding: 30px 130px 30px 30px;
+  padding: 25px 130px 25px 30px;
 
   color: $white;
   text-decoration: none;
@@ -71,7 +77,19 @@
 @media (min-width: $tablet-widths) {
 
   .categories {
-    margin-bottom: 55px;
+    margin-top: 80px;
+    margin-bottom: 47px;
+  }
+
+  .categories__link {
+    padding: 30px 130px 35px 35px;
+  }
+
+  .categories__item {
+    &--toy::after {
+      top: 27%;
+      right: 34px;
+    }
   }
 
   .categories__item-wrapper {
@@ -82,6 +100,6 @@
 @media (min-width: $desktop-widths) {
 
   .categories {
-    margin-bottom: 75px;
+    margin-bottom: 64px;
   }
 }

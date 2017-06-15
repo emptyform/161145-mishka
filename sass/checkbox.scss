@@ -1,5 +1,5 @@
 .checkbox {
-  margin: 45px 0;
+  margin-bottom: 33px;
 
   color: $black;
   font-size: 17px;
@@ -62,4 +62,33 @@
 
   content: "";
   background-color: $black;
+}
+
+@media (min-width: $tablet-widths) {
+  .checkbox__indicator {
+    width: 54px;
+    height: 52px;
+  }
+
+  .checkbox__label {
+    padding-top: 13px;
+    padding-left: 80px;
+
+    font-size: 19px;
+    line-height: 21px;
+  }
+
+  .checkbox__input:checked + .checkbox__label > .checkbox__indicator::before {
+    top: 20px;
+    left: 14px;
+    width: 2px;
+    height: 18px;
+  }
+
+  .checkbox__input:checked + .checkbox__label > .checkbox__indicator::after {
+    top: 9px;
+    left: 31px;
+    width: 2px;
+    height: 30px;
+  }
 }

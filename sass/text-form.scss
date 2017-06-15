@@ -1,0 +1,30 @@
+.text-form {
+  margin-bottom: 6px;
+
+  color: $black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.text-form__label {
+  display: block;
+  margin-bottom: 8px;
+}
+@media (min-width: $tablet-widths) {
+
+  .text-form {
+    display: flex;
+  }
+
+  .text-form__label {
+    padding-top: 14px;
+    padding-right: 34px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .text-form {
+    padding-right: 125px;
+  }
+}

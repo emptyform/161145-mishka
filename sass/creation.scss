@@ -1,7 +1,7 @@
 .creation {
   @include container();
 
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 
 .creation__wrapper {
@@ -11,28 +11,28 @@
 
 .creation__title {
   padding-left: 60px;
-  margin: 30px 30px 25px;
+  margin: 26px 29px 23px;
   color: $black;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-}
 
-.creation__title--icon::before {
-  position: absolute;
-  top: 36px;
-  left: 35px;
+  &--icon::before {
+    position: absolute;
+    top: 31px;
+    left: 32px;
 
-  width: 32px;
-  height: 27px;
+    width: 32px;
+    height: 27px;
 
-  content: "";
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
+    content: "";
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .creation__video {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .creation__text {
@@ -56,29 +56,36 @@
   .creation__wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 63px;
   }
 
   .creation__video {
     order: -1;
+
     width: 668px;
     height: 455px;
+    margin-bottom: 33px;
 
     background-color: #46c1ae;
   }
 
   .creation__title {
-    padding-left: 95px;
+    padding-left: 105px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 24px;
 
     &--icon::before {
-      top: 480px;
+      top: 483px;
+      left: 41px;
     }
   }
 
   .creation__text {
     width: auto;
-    margin-bottom: 40px;
+    margin: 0 40px 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -86,8 +93,8 @@
 
   .creation__order {
     display: inline-block;
-    width: auto;
-    margin: 0 30px 45px;
+    width: 584px;
+    margin: 0 41px 45px;
   }
 }
 
@@ -97,6 +104,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 455px;
+    margin-bottom: 105px;
   }
 
   .creation__video {
@@ -108,21 +116,19 @@
   .creation__title {
     width: 236px;
     padding-left: 0;
-    margin: 100px 50px 40px 80px;
-    margin-bottom: 40px;
+    margin: 94px 50px 34px 77px;
 
     overflow: hidden;
 
     &--icon::before {
-      top: 47px;
-      left: 762px;
+      top: 41px;
+      left: 761px;
     }
   }
 
   .creation__text {
     width: 236px;
-    margin: 0 50px 50px 80px;
-    margin-bottom: 40px;
+    margin: 0 50px 46px 80px;
 
     font-size: 15px;
     line-height: 30px;
