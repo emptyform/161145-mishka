@@ -57,8 +57,15 @@
   <main>
     <section class="catalog">
       <article class="catalog-item">
-        <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg"
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg"
+            srcset="img/photo-1-mobile@2x.jpg 2x"
             alt="item image">
+        </picture>
         <div class="catalog-item__desc">
           <span class="catalog-item__title">Зайчик-попрыгайчик</span>
           <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
@@ -71,8 +78,15 @@
         </div>
       </article>
       <article class="catalog-item">
-        <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg"
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+          <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg"
+            srcset="img/photo-2-mobile@2x.jpg 2x"
             alt="item image">
+        </picture>
         <div class="catalog-item__desc">
           <span class="catalog-item__title">Корзинка для белья</span>
           <span class="catalog-item__details">
@@ -87,8 +101,15 @@
         </div>
       </article>
       <article class="catalog-item">
-        <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg"
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+          <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg"
+            srcset="img/photo-3-mobile@2x.jpg 2x"
             alt="item image">
+        </picture>
         <div class="catalog-item__desc">
           <span class="catalog-item__title">Большая корзинка<br> для игрушек</span>
           <span class="catalog-item__details">

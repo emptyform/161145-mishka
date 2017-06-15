@@ -14,10 +14,8 @@ $color-main--dark:    #62d1ba; // Радио
 $color-main--darken:  #56c3b2; // Темная
 $color-main--darkest: #46c1ae; // Темная при наведении/нажатии
 
-$tablet-widths: 768px;
-$desktop-widths: 1200px;
-$mobile-padding: 30px;
-
-//fonts
-
-//Gromov variables
+$tablet-widths:       768px;
+$desktop-widths:      1200px;
+$mobile-padding:      30px;
+$retina-dpi:          144dpi;
+$retina-dppx:         1.5dppx;

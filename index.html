@@ -105,8 +105,14 @@
           </li>
         </ul>
       </div>
-      <img class="week-deal__img" src="img/triple-set-mobile@1x.jpg"
-        alt="week deal item" width="260" height="315">
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img class="week-deal__img" src="img/triple-set-mobile@1x.jpg"
+          srcset="img/triple-set-mobile@2x.jpg 2x" alt="week deal item">
+      </picture>
       <div class="week-deal__order-box">
         <div class="week-deal__price">Цена: 990 руб.</div>
         <a class="week-deal__order btn" href="#0">Заказать</a>
