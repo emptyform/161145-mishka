@@ -84,10 +84,6 @@
   &--search {
     top: 30px;
     left: 30px;
-
-    &:hover {
-      fill: $color-main;
-    }
   }
 
   &--cart {
@@ -113,6 +109,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-nav__user-panel-link:hover > .main-nav__user-panel-icon {
+  fill: $color-main;
 }
 
 .main-nav__toggler {

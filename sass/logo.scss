@@ -1,3 +1,13 @@
 .logo {
   cursor: pointer;
 }
+
+.logo__footer {
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
