@@ -13,7 +13,13 @@
         <nav class="page-header__nav main-nav">
           <div class="page-header__logo main-nav__logo logo">
             <a class="page-header__logo-link">
-              <img class="logo__img" src="img/logo-mobile.svg" alt="Mishka logo">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg">
+                <img class="logo__img" src="img/logo-mobile.svg" alt="Mishka logo">
+              </picture>
             </a>
             <button class="main-nav__toggler main-nav__toggler--close"
               type="button" aria-label="Открыть">Открыть</button>
@@ -32,12 +38,19 @@
             </li>
           </ul>
           <ul class="main-nav__user-panel-list main-nav__user-panel-list--close">
-            <li class="main-nav__user-panel-item main-nav__user-panel-item--search">
-              <a class="main-nav__user-panel-link" href="#0">
+            <li class="main-nav__user-panel-item">
+              <img
+                class="main-nav__user-panel-icon main-nav__user-panel-icon--search"
+                src="img/icon-search.svg" alt="search">
+              <a
+                class="main-nav__user-panel-link main-nav__user-panel-link--search" href="#0">
                 Поиск по сайту
               </a>
             </li>
-            <li class="main-nav__user-panel-item main-nav__user-panel-item--cart">
+            <li class="main-nav__user-panel-item">
+              <img
+                class="main-nav__user-panel-icon main-nav__user-panel-icon--cart"
+                src="img/icon-cart.svg" alt="search">
               <a class="main-nav__user-panel-link" href="#0">
                 Корзина: пока пуста
               </a>

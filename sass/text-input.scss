@@ -24,12 +24,28 @@
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: right 3px;
+
+    &:hover {
+      background-image: url("../img/icon-phone-active.svg");
+    }
+
+    &:focus {
+      background-image: url("../img/icon-phone-active.svg");
+    }
   }
 
   &--email {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: right 3px;
+
+    &:hover {
+      background-image: url("../img/icon-mail-active.svg");
+    }
+
+    &:focus {
+      background-image: url("../img/icon-mail-active.svg");
+    }
   }
 }
 

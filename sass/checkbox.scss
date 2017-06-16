@@ -34,6 +34,14 @@
   background-color: $white;
 
   cursor: pointer;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:active {
+    border-color: #cdcdcd;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label > .checkbox__indicator::before {

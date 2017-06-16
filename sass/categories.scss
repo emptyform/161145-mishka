@@ -45,6 +45,24 @@
     background-repeat: no-repeat;
   }
 
+  &:hover {
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--interior:hover {
+    padding-bottom: 5px;
+  }
+
+  &--toy:hover {
+    //padding-bottom: 5px;
+  }
+
   &--interior::after {
     top: 22%;
     right: 37px;
