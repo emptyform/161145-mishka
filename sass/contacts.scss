@@ -74,8 +74,10 @@
 }
 
 .contacts__map {
-  //width: calc(100vw + 2 * $mobile-padding); TODO calculation % + vw
+  width: 340px;
+  height: 457px;
   margin-left: -$mobile-padding;
+  margin-right: -$mobile-padding;
   margin-bottom: 34px;
 }
 
@@ -123,8 +125,11 @@
   }
 
   .contacts__map {
-    width: 100%;
+    width: 768px;
+    height: 457px;
     margin-bottom: 47px;
+    margin-left: -$tablet-padding;
+    margin-right: -$tablet-padding;
   }
 }
 
@@ -168,6 +173,9 @@
     position: absolute;
     right: 0;
 
-    width: auto;
+    width: 525px;
+    height: 457px;
+    margin-left: -$desktop-padding;
+    margin-right: -$desktop-padding;
   }
 }

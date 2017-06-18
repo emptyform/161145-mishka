@@ -32,12 +32,37 @@
 }
 
 .creation__video {
+  position: relative;
+
   margin-bottom: 22px;
+
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+
+    top: -92px;
+    left: 77px;
+
+    width: 101px;
+    height: 77px;
+
+    content: "";
+    background-image: url("../img/icon-play.svg");
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(0.8);
+  }
 }
 
 .creation__text {
   width: 183px;
-  margin: 0 30px 25px;
+  margin: 22px 30px 25px;
 
   color: $gray--dark;
   font-size: 13px;
@@ -67,6 +92,11 @@
     margin-bottom: 33px;
 
     background-color: #46c1ae;
+
+    &::after {
+      top: 44%;
+      left: 43%;
+    }
   }
 
   .creation__title {
