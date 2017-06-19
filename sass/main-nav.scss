@@ -138,6 +138,10 @@
     height: 21px;
     background: url("../img/icon-menu-close.svg");
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-widths) {
