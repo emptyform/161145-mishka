@@ -15,6 +15,7 @@
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   padding-top: 10px;
   padding-left: 65px;
 
@@ -35,6 +36,14 @@
   background-color: $white;
 
   cursor: pointer;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:active {
+    border-color: #cdcdcd;
+  }
 }
 
 .radio__input:checked + .radio__label > .radio__indicator::before {

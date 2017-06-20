@@ -7,6 +7,15 @@
 
   font-family: "Open-sans", Verdana, sans-serif;
 
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-main;
+    outline: none;
+  }
+
   &::placeholder {
     color: $gray--dark;
     font-size: 17px;

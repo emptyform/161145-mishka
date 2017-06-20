@@ -1,8 +1,10 @@
 .logo {
   cursor: pointer;
+}
 
+.logo__footer {
   &:hover {
-    opacity: 0.6;
+    fill: $color-main;
   }
 
   &:active {

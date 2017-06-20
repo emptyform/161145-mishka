@@ -48,6 +48,7 @@
 
 .contacts__item-name {
   display: inline-block;
+  vertical-align: top;
   width: 73px;
 
   vertical-align: top;
@@ -55,12 +56,32 @@
 
 .contacts__item-value {
   display: inline-block;
+  vertical-align: top;
   width: 180px;
+
+  &--email {
+    width: auto;
+    border-bottom: 1px solid $color-main;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $color-main;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__map {
-  //width: calc(100vw + 2 * $mobile-padding); TODO calculation % + vw
+  top: 0;
+
+  width: 340px;
+  height: 457px;
   margin-left: -$mobile-padding;
+  margin-right: -$mobile-padding;
   margin-bottom: 34px;
 }
 
@@ -96,6 +117,11 @@
 
   .contacts__item-value {
     width: 200px;
+
+    &--email {
+      width: auto;
+      margin-right: 15px;
+    }
   }
 
   .contacts__write {
@@ -103,8 +129,11 @@
   }
 
   .contacts__map {
-    width: 100%;
+    width: 768px;
+    height: 457px;
     margin-bottom: 47px;
+    margin-left: -$tablet-padding;
+    margin-right: -$tablet-padding;
   }
 }
 
@@ -148,6 +177,9 @@
     position: absolute;
     right: 0;
 
-    width: auto;
+    width: 525px;
+    height: 457px;
+    margin-left: -$desktop-padding;
+    margin-right: -$desktop-padding;
   }
 }

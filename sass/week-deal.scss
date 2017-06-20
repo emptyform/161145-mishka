@@ -57,6 +57,7 @@
 
 .week-deal__item-property {
   display: inline-block;
+  vertical-align: top;
   width: 94px;
 }
 
@@ -71,7 +72,7 @@
 }
 
 .week-deal__img {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -131,6 +132,8 @@
     position: absolute;
     top: 100px;
     right: 50px;
+
+    z-index: -1;
   }
 
   .week-deal__order {

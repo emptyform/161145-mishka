@@ -1,6 +1,6 @@
 .categories {
   min-width: 320px;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
 
   font-size: 19px;
   font-weight: 700;
@@ -13,6 +13,7 @@
 .categories__list {
   display: flex;
   flex-wrap: wrap;
+  min-height: 211px;
   @include container();
   padding: 0;
 }
@@ -45,8 +46,26 @@
     background-repeat: no-repeat;
   }
 
+  &:hover {
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--interior:hover {
+    padding-bottom: 5px;
+  }
+
+  &--toy:hover {
+    padding-bottom: 5px;
+  }
+
   &--interior::after {
-    top: 22%;
+    top: 25px;
     right: 37px;
 
     width: 40px;
@@ -56,7 +75,7 @@
   }
 
   &--toy::after {
-    top: 20%;
+    top: 27px;
     right: 27px;
 
     width: 60px;
@@ -77,8 +96,12 @@
 @media (min-width: $tablet-widths) {
 
   .categories {
-    margin-top: 80px;
-    margin-bottom: 47px;
+    margin-bottom: 42px;
+  }
+
+  .categories__list {
+    min-height: 122px;
+    align-items: flex-end;
   }
 
   .categories__link {
@@ -87,7 +110,7 @@
 
   .categories__item {
     &--toy::after {
-      top: 27%;
+      top: 31px;
       right: 34px;
     }
   }
@@ -100,6 +123,6 @@
 @media (min-width: $desktop-widths) {
 
   .categories {
-    margin-bottom: 64px;
+    margin-bottom: 59px;
   }
 }
