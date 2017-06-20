@@ -145,6 +145,7 @@
 
   .creation__title {
     width: 236px;
+    height: 48px;
     padding-left: 0;
     margin: 94px 50px 34px 77px;
 
@@ -158,15 +159,21 @@
 
   .creation__text {
     width: 236px;
+    height: 120px;
     margin: 0 50px 46px 80px;
 
     font-size: 15px;
     line-height: 30px;
+
+    overflow: hidden;
   }
 
   .creation__order {
     display: inline-block;
     width: 230px;
+    height: 20px;
     margin: 0 80px 45px;
+
+    overflow: hidden;
   }
 }

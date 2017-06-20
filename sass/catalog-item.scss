@@ -177,8 +177,13 @@
     flex-direction: column;
   }
 
+  .catalog-item__title {
+    width: 262px;
+  }
+
   .catalog-item__desc {
-    height: 197px;
+    width: 314px;
+    min-height: 197px;
     padding: 18px 26px 26px;
 
     &:hover {
