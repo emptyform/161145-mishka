@@ -284,6 +284,12 @@
     padding: 32px 0;
   }
 
+  .main-nav__navigation-item:not(:last-child) {
+    padding-right: 35px;
+    margin-right: 31px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   .main-nav__user-panel-list {
     margin-left: 90px;
   }
