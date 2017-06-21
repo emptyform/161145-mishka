@@ -55,7 +55,7 @@
     transform: scale(1.2);
   }
 
-  &:active::after {
+  &:active::after { //TODO works differently on IE
     transform: scale(0.8);
   }
 }

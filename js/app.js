@@ -1,3 +1,5 @@
+'use strict';
+
 var toggler = document.querySelector('.main-nav__toggler');
 var navigation = document.querySelector('.main-nav__navigation-list');
 var userPanel = document.querySelector('.main-nav__user-panel-list');

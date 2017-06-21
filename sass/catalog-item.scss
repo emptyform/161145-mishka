@@ -161,7 +161,7 @@
     }
   }
 
-  .catalog-item__price {
+  .catalog-item__price { //TODO flex doesn't work in IE
     font-size: 17px;
     line-height: 24px;
   }
