@@ -1,4 +1,4 @@
-.copyright {
+.copyright { //TODO strage crop on Mozilla and IE
   display: flex;
   height: 70px;
   justify-content: center;
@@ -11,8 +11,8 @@
 }
 
 .copyright__link {
-  width: 27px;
-  height: 34px;
+  width: 26.943px;
+  height: 34.09px;
   margin-left: 30px;
 
   font-size: 0;
@@ -30,6 +30,8 @@
 }
 
 @media (min-width: $tablet-widths) {
-  font-size: 19px;
-  line-height: 27px;
+  .copyright {
+    font-size: 19px;
+    line-height: 27px;
+  }
 }

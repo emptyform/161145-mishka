@@ -20,7 +20,7 @@
   &:hover {
     fill: $color-main;
   }
-  &:active {
+  &:active { //TODO doesn't work on IE
     opacity: 0.3;
   }
 }
