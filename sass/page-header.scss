@@ -101,12 +101,13 @@
     min-width: 768px;
 
     &--image {
-      min-height: 585px;
+      min-height: 578px;
       padding: 112px 135px;
       font-size: 43px;
       line-height: 50px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: 50% 26%;
+      background-color: $gray--img-bg;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
@@ -190,7 +191,7 @@
     }
 
     &--image {
-      height: 568px;
+      height: 560px;
       padding: 94px 300px;
       font-size: 53px;
       line-height: 57px;

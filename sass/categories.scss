@@ -13,7 +13,7 @@
 .categories__list {
   display: flex;
   flex-wrap: wrap;
-  min-height: 211px;
+  min-height: 214px;
   @include container();
   padding: 0;
 }
@@ -96,11 +96,11 @@
 @media (min-width: $tablet-widths) {
 
   .categories {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   .categories__list {
-    min-height: 122px;
+    min-height: 124px;
     align-items: flex-end;
   }
 
@@ -123,6 +123,6 @@
 @media (min-width: $desktop-widths) {
 
   .categories {
-    margin-bottom: 59px;
+    margin-bottom: 66px;
   }
 }
