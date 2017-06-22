@@ -3,7 +3,6 @@
   height: 80px;
   justify-content: center;
   align-items: center;
-  margin-right: 23px;
 }
 
 .social-links__item {
@@ -23,5 +22,12 @@
   }
   &:active { //TODO doesn't work on IE
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+
+  .social-links {
+    margin-right: 23px;
   }
 }
