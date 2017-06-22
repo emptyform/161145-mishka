@@ -2109,3 +2109,25 @@ body {
 @media (min-width: 768px) {
   .submit__btn {
     width: 230px; } }
+
+.item-module {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40vh;
+  text-align: center;
+  background-color: #46c1ae;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .item-module--close {
+    display: none; }
+
+.item-module__content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
