@@ -24,3 +24,10 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-widths) {
+
+  .social-links {
+    margin-right: 23px;
+  }
+}
