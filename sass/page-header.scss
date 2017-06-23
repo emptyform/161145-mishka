@@ -67,12 +67,6 @@
   width: 100%;
 
   align-items: center;
-}
-
-.page-header__logo-link {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 21px;
 
   &:hover {
     opacity: 0.6;
@@ -81,6 +75,12 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-header__logo-link {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 21px;
 }
 
 @media (min-width: $tablet-widths) {

@@ -100,15 +100,15 @@ body {
   width: 100%;
   -ms-flex-align: center;
       align-items: center; }
+  .page-header__logo:hover {
+    opacity: 0.6; }
+  .page-header__logo:active {
+    opacity: 0.3; }
 
 .page-header__logo-link {
   margin-left: auto;
   margin-right: auto;
   padding-left: 21px; }
-  .page-header__logo-link:hover {
-    opacity: 0.6; }
-  .page-header__logo-link:active {
-    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .page-header {
