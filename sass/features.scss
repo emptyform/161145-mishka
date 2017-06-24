@@ -25,16 +25,21 @@
 .features__item {
   width: 255px;
   padding-top: 55px;
+  padding-right: 50px;
   margin-bottom: 28px;
 
   background-repeat: no-repeat;
 
   &--material {
+    padding-right: 60px;
+
     background-image: url("../img/icon-feature-1.svg");
     background-position: 8px 0px;
   }
 
   &--handmade {
+    padding-right: 40px;
+
     background-image: url("../img/icon-feature-2.svg");
   }
 
@@ -43,6 +48,8 @@
   }
 
   &--support {
+    padding-right: 0;
+
     background-image: url("../img/icon-feature-4.svg");
     background-position: 0px 5px;
   }
@@ -77,13 +84,16 @@
 
   .features__item {
     width: 334px;
-    margin-bottom: 63px;
     padding-top: 50px;
+    padding-right: 70px;
+    margin-bottom: 63px;
 
     background-repeat: no-repeat;
 
     &--material {
       order: 0;
+
+      padding-right: 110px;
     }
 
     &--handmade {
@@ -96,10 +106,14 @@
 
     &--support {
       order: 3;
+
+      padding-right: 40px;
     }
 
     &--likes {
       order: 4;
+
+      padding-right: 100px;
     }
 
     &--gift {
@@ -121,5 +135,24 @@
 
   .features__item {
     width: 350px;
+    padding-right: 110px;
+
+    &--material {
+      order: 0;
+
+      padding-right: 120px;
+    }
+
+    &--handmade {
+      order: 1;
+
+      padding-right: 100px;
+    }
+
+    &--support {
+      order: 3;
+
+      padding-right: 40px;
+    }
   }
 }
